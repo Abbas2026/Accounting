@@ -12,3 +12,12 @@ Login::~Login()
 {
     delete ui;
 }
+
+void Login::on_pushButton_clicked()
+{
+    this->close();
+    Menu *menu = new Menu();
+    menu->setAttribute(Qt::WA_DeleteOnClose);
+    menu->show();
+}
+
