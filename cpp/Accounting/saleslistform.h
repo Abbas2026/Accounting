@@ -2,7 +2,8 @@
 #define SALESLISTFORM_H
 
 #include <QWidget>
-
+#include <QDialog>
+#include <QSqlTableModel>
 namespace Ui {
 class SalesListForm;
 }
@@ -15,8 +16,18 @@ public:
     explicit SalesListForm(QWidget *parent = nullptr);
     ~SalesListForm();
 
+private slots:
+    void onTableClicked(const QModelIndex &index);
+    void on_pushButton_deleteSale_clicked();
+
 private:
     Ui::SalesListForm *ui;
+    QSqlTableModel *model;
+    int selectedSaleId = -1;
+    QString selectedProductCode;
+    int selectedQuantity = 0;
+
+    void loadSales();
 };
 
 #endif // SALESLISTFORM_H

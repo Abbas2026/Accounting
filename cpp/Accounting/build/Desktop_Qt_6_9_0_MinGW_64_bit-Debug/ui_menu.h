@@ -22,6 +22,7 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QPushButton *pushButton_4;
 
     void setupUi(QWidget *Menu)
     {
@@ -30,13 +31,16 @@ public:
         Menu->resize(938, 648);
         pushButton = new QPushButton(Menu);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(670, 70, 80, 24));
+        pushButton->setGeometry(QRect(670, 150, 80, 24));
         pushButton_2 = new QPushButton(Menu);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(670, 170, 80, 24));
+        pushButton_2->setGeometry(QRect(670, 210, 80, 24));
         pushButton_3 = new QPushButton(Menu);
         pushButton_3->setObjectName("pushButton_3");
         pushButton_3->setGeometry(QRect(660, 270, 111, 24));
+        pushButton_4 = new QPushButton(Menu);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(650, 340, 131, 24));
 
         retranslateUi(Menu);
 
@@ -49,6 +53,7 @@ public:
         pushButton->setText(QCoreApplication::translate("Menu", "\330\253\330\250\330\252 \332\251\330\247\331\204\330\247", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Menu", "\331\201\330\261\331\210\330\264 \332\251\330\247\331\204\330\247", nullptr));
         pushButton_3->setText(QCoreApplication::translate("Menu", "\331\210\333\214\330\261\330\247\333\214\330\264 \331\210 \330\255\330\260\331\201 \332\251\330\247\331\204\330\247\331\207\330\247", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("Menu", "\331\201\330\247\332\251\330\252\331\210\330\261 \331\201\330\261\331\210\330\264 \331\207\330\247 \331\210 \331\205\330\261\330\254\331\210\330\271", nullptr));
     } // retranslateUi
 
 };

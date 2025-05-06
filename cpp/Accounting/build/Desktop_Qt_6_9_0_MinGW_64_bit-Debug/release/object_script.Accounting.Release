@@ -4,8 +4,10 @@ release/login.o
 release/menu.o
 release/productlistform.o
 release/saleform.o
+release/saleslistform.o
 release/moc_addproductform.o
 release/moc_login.o
 release/moc_menu.o
 release/moc_productlistform.o
 release/moc_saleform.o
+release/moc_saleslistform.o
