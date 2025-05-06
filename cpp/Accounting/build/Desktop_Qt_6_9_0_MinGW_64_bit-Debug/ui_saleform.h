@@ -31,6 +31,7 @@ public:
     QLabel *label_4;
     QPushButton *pushButton_checkProduct;
     QPushButton *pushButton_submitSale;
+    QPushButton *pushButton_exit;
 
     void setupUi(QWidget *SaleForm)
     {
@@ -69,6 +70,9 @@ public:
         pushButton_submitSale = new QPushButton(SaleForm);
         pushButton_submitSale->setObjectName("pushButton_submitSale");
         pushButton_submitSale->setGeometry(QRect(750, 610, 80, 24));
+        pushButton_exit = new QPushButton(SaleForm);
+        pushButton_exit->setObjectName("pushButton_exit");
+        pushButton_exit->setGeometry(QRect(80, 590, 80, 24));
 
         retranslateUi(SaleForm);
 
@@ -84,6 +88,7 @@ public:
         label_4->setText(QCoreApplication::translate("SaleForm", "\330\252\330\271\330\257\330\247\330\257", nullptr));
         pushButton_checkProduct->setText(QCoreApplication::translate("SaleForm", "\330\252\330\247\333\214\333\214\330\257", nullptr));
         pushButton_submitSale->setText(QCoreApplication::translate("SaleForm", "\331\201\330\261\331\210\330\264", nullptr));
+        pushButton_exit->setText(QCoreApplication::translate("SaleForm", "\330\256\330\261\331\210\330\254", nullptr));
     } // retranslateUi
 
 };

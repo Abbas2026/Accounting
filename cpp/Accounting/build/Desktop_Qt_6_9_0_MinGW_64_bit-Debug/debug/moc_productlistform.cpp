@@ -46,7 +46,8 @@ template <> constexpr inline auto productlistform::qt_create_metaobjectdata<qt_m
         "onTableClicked",
         "on_pushButton_delete_clicked",
         "on_pushButton_edit_clicked",
-        "on_pushButton_refresh_clicked"
+        "on_pushButton_refresh_clicked",
+        "on_pushButton_menu_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -64,6 +65,8 @@ template <> constexpr inline auto productlistform::qt_create_metaobjectdata<qt_m
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_pushButton_refresh_clicked'
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_pushButton_menu_clicked'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -92,6 +95,7 @@ void productlistform::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 2: _t->on_pushButton_delete_clicked(); break;
         case 3: _t->on_pushButton_edit_clicked(); break;
         case 4: _t->on_pushButton_refresh_clicked(); break;
+        case 5: _t->on_pushButton_menu_clicked(); break;
         default: ;
         }
     }
@@ -116,14 +120,14 @@ int productlistform::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }

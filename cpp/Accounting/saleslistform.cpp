@@ -70,3 +70,12 @@ void SalesListForm::on_pushButton_deleteSale_clicked()
     loadSales();
     selectedSaleId = -1;
 }
+
+void SalesListForm::on_pushButton_menu_clicked()
+{
+    this->close();
+    Menu *menu = new Menu();
+    menu->setAttribute(Qt::WA_DeleteOnClose);
+    menu->show();
+}
+

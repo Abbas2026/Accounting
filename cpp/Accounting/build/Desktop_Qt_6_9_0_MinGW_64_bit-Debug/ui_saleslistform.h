@@ -30,6 +30,7 @@ public:
     QLineEdit *lineEdit_price;
     QLineEdit *lineEdit_total;
     QLineEdit *lineEdit_date;
+    QPushButton *pushButton_menu;
 
     void setupUi(QWidget *SalesListForm)
     {
@@ -60,6 +61,9 @@ public:
         lineEdit_date = new QLineEdit(SalesListForm);
         lineEdit_date->setObjectName("lineEdit_date");
         lineEdit_date->setGeometry(QRect(100, 400, 161, 24));
+        pushButton_menu = new QPushButton(SalesListForm);
+        pushButton_menu->setObjectName("pushButton_menu");
+        pushButton_menu->setGeometry(QRect(880, 560, 80, 24));
 
         retranslateUi(SalesListForm);
 
@@ -70,6 +74,7 @@ public:
     {
         SalesListForm->setWindowTitle(QCoreApplication::translate("SalesListForm", "Form", nullptr));
         pushButton_deleteSale->setText(QCoreApplication::translate("SalesListForm", "PushButton", nullptr));
+        pushButton_menu->setText(QCoreApplication::translate("SalesListForm", "\331\205\331\206\331\210", nullptr));
     } // retranslateUi
 
 };

@@ -138,7 +138,20 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>ثبت</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_menu">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>560</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>منو</string>
    </property>
   </widget>
  </widget>

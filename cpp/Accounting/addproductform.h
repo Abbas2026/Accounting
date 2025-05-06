@@ -5,7 +5,7 @@
 #include <QSqlQuery>
 #include <QMessageBox>
 #include <QSqlError>
-
+#include "menu.h"
 namespace Ui {
 class AddProductForm;
 }
@@ -19,6 +19,9 @@ public:
     ~AddProductForm();
     void addProductToDB();
     bool isAnyFieldEmpty();
+
+private slots:
+    void on_pushButton_menu_clicked();
 
 private:
     Ui::AddProductForm *ui;

@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
+#include "menu.h"
 namespace Ui {
 class AddUser;
 }
@@ -18,7 +19,9 @@ public:
     ~AddUser();
 
 private slots:
+
     void on_pushButton_addUser_clicked();
+    void on_pushButton_menu_clicked();
 
 private:
     Ui::AddUser *ui;

@@ -30,6 +30,7 @@ public:
     QLabel *label_3;
     QLabel *label_4;
     QPushButton *pushButton_addUser;
+    QPushButton *pushButton_menu;
 
     void setupUi(QWidget *AddUser)
     {
@@ -63,6 +64,9 @@ public:
         pushButton_addUser = new QPushButton(AddUser);
         pushButton_addUser->setObjectName("pushButton_addUser");
         pushButton_addUser->setGeometry(QRect(800, 400, 80, 24));
+        pushButton_menu = new QPushButton(AddUser);
+        pushButton_menu->setObjectName("pushButton_menu");
+        pushButton_menu->setGeometry(QRect(290, 480, 80, 24));
 
         retranslateUi(AddUser);
 
@@ -77,6 +81,7 @@ public:
         label_3->setText(QCoreApplication::translate("AddUser", "\330\252\331\204\331\201\331\206", nullptr));
         label_4->setText(QCoreApplication::translate("AddUser", "\330\261\331\205\330\262 \330\271\330\250\331\210\330\261", nullptr));
         pushButton_addUser->setText(QCoreApplication::translate("AddUser", "\330\247\331\201\330\262\331\210\330\257\331\206", nullptr));
+        pushButton_menu->setText(QCoreApplication::translate("AddUser", "\331\205\331\206\331\210", nullptr));
     } // retranslateUi
 
 };

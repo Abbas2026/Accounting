@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QSqlTableModel>
+#include "menu.h"
 namespace Ui {
 class SalesListForm;
 }
@@ -18,6 +19,8 @@ public:
 private slots:
     void onTableClicked(const QModelIndex &index);
     void on_pushButton_deleteSale_clicked();
+
+    void on_pushButton_menu_clicked();
 
 private:
     Ui::SalesListForm *ui;

@@ -32,6 +32,7 @@ public:
     QLabel *label_sell;
     QLabel *label_stock;
     QPushButton *btn_addProduct;
+    QPushButton *pushButton_menu;
 
     void setupUi(QWidget *AddProductForm)
     {
@@ -71,6 +72,9 @@ public:
         btn_addProduct = new QPushButton(AddProductForm);
         btn_addProduct->setObjectName("btn_addProduct");
         btn_addProduct->setGeometry(QRect(900, 480, 80, 24));
+        pushButton_menu = new QPushButton(AddProductForm);
+        pushButton_menu->setObjectName("pushButton_menu");
+        pushButton_menu->setGeometry(QRect(910, 560, 80, 24));
 
         retranslateUi(AddProductForm);
 
@@ -85,7 +89,8 @@ public:
         label_buy->setText(QCoreApplication::translate("AddProductForm", "\331\202\333\214\331\205\330\252 \330\256\330\261\333\214\330\257", nullptr));
         label_sell->setText(QCoreApplication::translate("AddProductForm", "\331\202\333\214\331\205\330\252 \331\201\330\261\331\210\330\264", nullptr));
         label_stock->setText(QCoreApplication::translate("AddProductForm", "\330\252\330\271\330\257\330\247\330\257", nullptr));
-        btn_addProduct->setText(QCoreApplication::translate("AddProductForm", "PushButton", nullptr));
+        btn_addProduct->setText(QCoreApplication::translate("AddProductForm", "\330\253\330\250\330\252", nullptr));
+        pushButton_menu->setText(QCoreApplication::translate("AddProductForm", "\331\205\331\206\331\210", nullptr));
     } // retranslateUi
 
 };

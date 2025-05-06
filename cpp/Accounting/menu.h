@@ -7,6 +7,7 @@
 #include "productlistform.h"
 #include "saleslistform.h"
 #include "adduser.h"
+#include "login.h"
 namespace Ui {
 class Menu;
 }
@@ -29,6 +30,10 @@ private slots:
     void on_pushButton_4_clicked();
 
     void on_pushButton_5_clicked();
+
+    void on_logout_clicked();
+
+    void on_pushButton_exit_clicked();
 
 private:
     Ui::Menu *ui;

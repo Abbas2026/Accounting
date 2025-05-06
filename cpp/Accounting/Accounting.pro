@@ -1,5 +1,6 @@
 QT       += core gui
 QT += sql
+RESOURCES += fonts.qrc
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,7 +27,8 @@ HEADERS += \
     menu.h \
     productlistform.h \
     saleform.h \
-    saleslistform.h
+    saleslistform.h \
+    styles.h
 
 FORMS += \
     addproductform.ui \

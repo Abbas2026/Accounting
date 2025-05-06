@@ -31,6 +31,7 @@ public:
     QLineEdit *lineEdit_buy;
     QLineEdit *lineEdit_sell;
     QLineEdit *lineEdit_stock;
+    QPushButton *pushButton_menu;
 
     void setupUi(QWidget *productlistform)
     {
@@ -64,6 +65,9 @@ public:
         lineEdit_stock = new QLineEdit(productlistform);
         lineEdit_stock->setObjectName("lineEdit_stock");
         lineEdit_stock->setGeometry(QRect(220, 650, 113, 24));
+        pushButton_menu = new QPushButton(productlistform);
+        pushButton_menu->setObjectName("pushButton_menu");
+        pushButton_menu->setGeometry(QRect(40, 800, 80, 24));
 
         retranslateUi(productlistform);
 
@@ -76,6 +80,7 @@ public:
         pushButton_delete->setText(QCoreApplication::translate("productlistform", "\330\255\330\260\331\201", nullptr));
         pushButton_edit->setText(QCoreApplication::translate("productlistform", "\331\210\333\214\330\261\330\247\333\214\330\264", nullptr));
         pushButton_refresh->setText(QCoreApplication::translate("productlistform", "\330\252\330\247\330\262\331\207 \330\263\330\247\330\262\333\214", nullptr));
+        pushButton_menu->setText(QCoreApplication::translate("productlistform", "\331\205\331\206\331\210", nullptr));
     } // retranslateUi
 
 };

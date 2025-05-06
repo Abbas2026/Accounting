@@ -6,6 +6,7 @@ release/menu.o
 release/productlistform.o
 release/saleform.o
 release/saleslistform.o
+release/qrc_fonts.o
 release/moc_addproductform.o
 release/moc_adduser.o
 release/moc_login.o

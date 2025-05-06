@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "menu.h"
 #include "saleform.h"
+#include "styles.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Login;
@@ -17,9 +18,12 @@ class Login : public QMainWindow
 public:
     Login(QWidget *parent = nullptr);
     ~Login();
+    void applystyle();
+
 
 private slots:
-    void on_pushButton_login_clicked();
+    void on_pushButton_login_clicked();    
+    void on_pushButton_exit_clicked();
 
 private:
     Ui::Login *ui;

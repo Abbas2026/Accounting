@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButton_submitSale_clicked();
 
+    void on_pushButton_exit_clicked();
+
 private:
     Ui::SaleForm *ui;
 };

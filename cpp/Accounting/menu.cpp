@@ -56,3 +56,21 @@ void Menu::on_pushButton_5_clicked()
     adduser->show();
 }
 
+
+void Menu::on_logout_clicked()
+{
+    this->close();
+    Login *login = new Login();
+    login->setAttribute(Qt::WA_DeleteOnClose);
+    login->show();
+}
+
+
+void Menu::on_pushButton_exit_clicked()
+{
+    if (QMessageBox::question(this, "خروج", "آیا از بستن برنامه مطمئن هستید؟")  == QMessageBox::Yes)
+    {
+        this->close();
+    }
+}
+

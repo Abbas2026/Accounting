@@ -63,7 +63,7 @@ void productlistform::on_pushButton_delete_clicked()
     QString code = ui->lineEdit_code->text();
     if (code.isEmpty()) return;
 
-    if (QMessageBox::question(this, "حذف کالا", "آیا مطمئن هستید؟") != QMessageBox::Yes)
+    if (QMessageBox::question(this, "حذف کالا", "آیااز حذف کالا مطمئن هستید؟") != QMessageBox::Yes)
         return;
 
     QSqlQuery query;
@@ -103,5 +103,14 @@ void productlistform::on_pushButton_edit_clicked()
 void productlistform::on_pushButton_refresh_clicked()
 {
         loadProducts();
+}
+
+
+void productlistform::on_pushButton_menu_clicked()
+{
+    this->close();
+    Menu *menu = new Menu();
+    menu->setAttribute(Qt::WA_DeleteOnClose);
+    menu->show();
 }
 

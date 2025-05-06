@@ -57,3 +57,12 @@ bool AddProductForm::isAnyFieldEmpty()
            ui->lineEdit_sell->text().isEmpty() ||
            ui->lineEdit_stock->text().isEmpty();
 }
+
+void AddProductForm::on_pushButton_menu_clicked()
+{
+    this->close();
+    Menu *menu = new Menu();
+    menu->setAttribute(Qt::WA_DeleteOnClose);
+    menu->show();
+}
+

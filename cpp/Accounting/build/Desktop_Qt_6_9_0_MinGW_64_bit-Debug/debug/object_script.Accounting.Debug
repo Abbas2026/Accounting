@@ -6,6 +6,7 @@ debug/menu.o
 debug/productlistform.o
 debug/saleform.o
 debug/saleslistform.o
+debug/qrc_fonts.o
 debug/moc_addproductform.o
 debug/moc_adduser.o
 debug/moc_login.o

@@ -8,6 +8,7 @@
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlError>
+#include "menu.h"
 namespace Ui {
 class productlistform;
 }
@@ -27,6 +28,8 @@ private slots:
     void on_pushButton_edit_clicked();
 
     void on_pushButton_refresh_clicked();
+
+    void on_pushButton_menu_clicked();
 
 private:
     Ui::productlistform *ui;

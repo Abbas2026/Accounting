@@ -432,7 +432,8 @@ Makefile: ../../Accounting.pro E:/Qt/6.9.0/mingw_64/mkspecs/win32-g++/qmake.conf
 		E:/Qt/6.9.0/mingw_64/lib/Qt6Sql.prl \
 		E:/Qt/6.9.0/mingw_64/lib/Qt6Core.prl \
 		E:/Qt/6.9.0/mingw_64/lib/Qt6EntryPoint.prl \
-		E:/Qt/6.9.0/mingw_64/mkspecs/features/build_pass.prf
+		E:/Qt/6.9.0/mingw_64/mkspecs/features/build_pass.prf \
+		../../fonts.qrc
 	$(QMAKE) -o Makefile ..\..\Accounting.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 E:/Qt/6.9.0/mingw_64/mkspecs/features/spec_pre.prf:
 E:/Qt/6.9.0/mingw_64/mkspecs/features/device_config.prf:
@@ -797,6 +798,7 @@ E:/Qt/6.9.0/mingw_64/lib/Qt6Sql.prl:
 E:/Qt/6.9.0/mingw_64/lib/Qt6Core.prl:
 E:/Qt/6.9.0/mingw_64/lib/Qt6EntryPoint.prl:
 E:/Qt/6.9.0/mingw_64/mkspecs/features/build_pass.prf:
+../../fonts.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\Accounting.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

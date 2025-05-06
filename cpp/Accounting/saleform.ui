@@ -137,6 +137,19 @@
     <string>فروش</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_exit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>590</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>خروج</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

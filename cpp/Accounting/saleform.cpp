@@ -97,3 +97,9 @@ void SaleForm::on_pushButton_submitSale_clicked()
     ui->lineEdit_quantity->clear();
 }
 
+
+void SaleForm::on_pushButton_exit_clicked()
+{
+    this->close();
+}
+
