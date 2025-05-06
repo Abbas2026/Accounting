@@ -21,3 +21,12 @@ void Menu::on_pushButton_clicked()
     addprform->show();
 }
 
+
+void Menu::on_pushButton_2_clicked()
+{
+    this->close();
+    SaleForm *saleform = new SaleForm();
+    saleform->setAttribute(Qt::WA_DeleteOnClose);
+    saleform->show();
+}
+

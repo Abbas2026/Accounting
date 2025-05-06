@@ -20,15 +20,19 @@ class Ui_Menu
 {
 public:
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *Menu)
     {
         if (Menu->objectName().isEmpty())
             Menu->setObjectName("Menu");
-        Menu->resize(727, 504);
+        Menu->resize(938, 648);
         pushButton = new QPushButton(Menu);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(300, 80, 80, 24));
+        pushButton->setGeometry(QRect(670, 70, 80, 24));
+        pushButton_2 = new QPushButton(Menu);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(670, 170, 80, 24));
 
         retranslateUi(Menu);
 
@@ -38,7 +42,8 @@ public:
     void retranslateUi(QWidget *Menu)
     {
         Menu->setWindowTitle(QCoreApplication::translate("Menu", "Form", nullptr));
-        pushButton->setText(QCoreApplication::translate("Menu", "PushButton", nullptr));
+        pushButton->setText(QCoreApplication::translate("Menu", "\330\253\330\250\330\252 \332\251\330\247\331\204\330\247", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Menu", "\331\201\330\261\331\210\330\264 \332\251\330\247\331\204\330\247", nullptr));
     } // retranslateUi
 
 };
