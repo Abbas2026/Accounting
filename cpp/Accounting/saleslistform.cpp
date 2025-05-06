@@ -36,9 +36,9 @@ void SalesListForm::onTableClicked(const QModelIndex &index)
     ui->lineEdit_date->setText(model->data(model->index(row, 6)).toString());
 
 
-    selectedSaleId = model->data(model->index(row, 0)).toInt(); // SaleID
-    selectedProductCode = model->data(model->index(row, 1)).toString(); // ProductCode
-    selectedQuantity = model->data(model->index(row, 3)).toInt(); // Quantity
+    selectedSaleId = model->data(model->index(row, 0)).toInt();
+    selectedProductCode = model->data(model->index(row, 1)).toString();
+    selectedQuantity = model->data(model->index(row, 3)).toInt();
 
 }
 
@@ -51,7 +51,6 @@ void SalesListForm::on_pushButton_deleteSale_clicked()
 
     QSqlQuery query;
 
-    // 1. حذف ردیف از Sales
     query.prepare("DELETE FROM Sales WHERE SaleID = ?");
     query.addBindValue(selectedSaleId);
     if (!query.exec()) {
@@ -59,7 +58,6 @@ void SalesListForm::on_pushButton_deleteSale_clicked()
         return;
     }
 
-    // 2. بازیابی به موجودی محصول
     query.prepare("UPDATE Products SET Stock = Stock + ? WHERE ProductCode = ?");
     query.addBindValue(selectedQuantity);
     query.addBindValue(selectedProductCode);

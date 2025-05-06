@@ -39,7 +39,7 @@
   <widget class="QLineEdit" name="lineEdit_code">
    <property name="geometry">
     <rect>
-     <x>630</x>
+     <x>750</x>
      <y>400</y>
      <width>113</width>
      <height>24</height>
@@ -49,7 +49,7 @@
   <widget class="QLineEdit" name="lineEdit_name">
    <property name="geometry">
     <rect>
-     <x>500</x>
+     <x>630</x>
      <y>400</y>
      <width>113</width>
      <height>24</height>
@@ -59,7 +59,7 @@
   <widget class="QLineEdit" name="lineEdit_quantity">
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>510</x>
      <y>400</y>
      <width>113</width>
      <height>24</height>
@@ -69,7 +69,7 @@
   <widget class="QLineEdit" name="lineEdit_price">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>390</x>
      <y>400</y>
      <width>113</width>
      <height>24</height>
@@ -79,7 +79,7 @@
   <widget class="QLineEdit" name="lineEdit_total">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>270</x>
      <y>400</y>
      <width>113</width>
      <height>24</height>
@@ -89,9 +89,9 @@
   <widget class="QLineEdit" name="lineEdit_date">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>100</x>
      <y>400</y>
-     <width>113</width>
+     <width>161</width>
      <height>24</height>
     </rect>
    </property>

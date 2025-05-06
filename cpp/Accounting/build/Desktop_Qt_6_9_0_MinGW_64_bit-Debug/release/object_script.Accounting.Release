@@ -1,4 +1,5 @@
 release/addproductform.o
+release/adduser.o
 release/main.o
 release/login.o
 release/menu.o
@@ -6,6 +7,7 @@ release/productlistform.o
 release/saleform.o
 release/saleslistform.o
 release/moc_addproductform.o
+release/moc_adduser.o
 release/moc_login.o
 release/moc_menu.o
 release/moc_productlistform.o

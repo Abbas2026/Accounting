@@ -39,12 +39,12 @@ template <> constexpr inline auto Login::qt_create_metaobjectdata<qt_meta_tag_ZN
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "Login",
-        "on_pushButton_clicked",
+        "on_pushButton_login_clicked",
         ""
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'on_pushButton_clicked'
+        // Slot 'on_pushButton_login_clicked'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
@@ -69,7 +69,7 @@ void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     auto *_t = static_cast<Login *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
+        case 0: _t->on_pushButton_login_clicked(); break;
         default: ;
         }
     }

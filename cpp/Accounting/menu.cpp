@@ -48,3 +48,11 @@ void Menu::on_pushButton_4_clicked()
     saleslist->show();
 }
 
+void Menu::on_pushButton_5_clicked()
+{
+    this->close();
+    AddUser *adduser = new AddUser();
+    adduser->setAttribute(Qt::WA_DeleteOnClose);
+    adduser->show();
+}
+

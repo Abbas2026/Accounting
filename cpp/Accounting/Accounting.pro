@@ -11,6 +11,7 @@ CONFIG += c++17
 
 SOURCES += \
     addproductform.cpp \
+    adduser.cpp \
     main.cpp \
     login.cpp \
     menu.cpp \
@@ -20,6 +21,7 @@ SOURCES += \
 
 HEADERS += \
     addproductform.h \
+    adduser.h \
     login.h \
     menu.h \
     productlistform.h \
@@ -28,6 +30,7 @@ HEADERS += \
 
 FORMS += \
     addproductform.ui \
+    adduser.ui \
     login.ui \
     menu.ui \
     productlistform.ui \

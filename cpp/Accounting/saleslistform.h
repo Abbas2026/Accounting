@@ -2,7 +2,6 @@
 #define SALESLISTFORM_H
 
 #include <QWidget>
-#include <QDialog>
 #include <QSqlTableModel>
 namespace Ui {
 class SalesListForm;

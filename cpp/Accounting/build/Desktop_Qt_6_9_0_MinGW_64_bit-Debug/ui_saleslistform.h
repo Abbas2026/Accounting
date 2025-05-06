@@ -44,22 +44,22 @@ public:
         pushButton_deleteSale->setGeometry(QRect(450, 500, 80, 24));
         lineEdit_code = new QLineEdit(SalesListForm);
         lineEdit_code->setObjectName("lineEdit_code");
-        lineEdit_code->setGeometry(QRect(630, 400, 113, 24));
+        lineEdit_code->setGeometry(QRect(750, 400, 113, 24));
         lineEdit_name = new QLineEdit(SalesListForm);
         lineEdit_name->setObjectName("lineEdit_name");
-        lineEdit_name->setGeometry(QRect(500, 400, 113, 24));
+        lineEdit_name->setGeometry(QRect(630, 400, 113, 24));
         lineEdit_quantity = new QLineEdit(SalesListForm);
         lineEdit_quantity->setObjectName("lineEdit_quantity");
-        lineEdit_quantity->setGeometry(QRect(380, 400, 113, 24));
+        lineEdit_quantity->setGeometry(QRect(510, 400, 113, 24));
         lineEdit_price = new QLineEdit(SalesListForm);
         lineEdit_price->setObjectName("lineEdit_price");
-        lineEdit_price->setGeometry(QRect(260, 400, 113, 24));
+        lineEdit_price->setGeometry(QRect(390, 400, 113, 24));
         lineEdit_total = new QLineEdit(SalesListForm);
         lineEdit_total->setObjectName("lineEdit_total");
-        lineEdit_total->setGeometry(QRect(140, 400, 113, 24));
+        lineEdit_total->setGeometry(QRect(270, 400, 113, 24));
         lineEdit_date = new QLineEdit(SalesListForm);
         lineEdit_date->setObjectName("lineEdit_date");
-        lineEdit_date->setGeometry(QRect(20, 400, 113, 24));
+        lineEdit_date->setGeometry(QRect(100, 400, 161, 24));
 
         retranslateUi(SalesListForm);
 

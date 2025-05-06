@@ -6,3 +6,6 @@ FROM Products;
 
 select *
 from  Sales;
+
+select *
+from  Users;

@@ -1,4 +1,5 @@
 debug/addproductform.o
+debug/adduser.o
 debug/main.o
 debug/login.o
 debug/menu.o
@@ -6,6 +7,7 @@ debug/productlistform.o
 debug/saleform.o
 debug/saleslistform.o
 debug/moc_addproductform.o
+debug/moc_adduser.o
 debug/moc_login.o
 debug/moc_menu.o
 debug/moc_productlistform.o
