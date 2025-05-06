@@ -14,19 +14,25 @@ SOURCES += \
     main.cpp \
     login.cpp \
     menu.cpp \
-    saleform.cpp
+    productlistform.cpp \
+    saleform.cpp \
+    saleslistform.cpp
 
 HEADERS += \
     addproductform.h \
     login.h \
     menu.h \
-    saleform.h
+    productlistform.h \
+    saleform.h \
+    saleslistform.h
 
 FORMS += \
     addproductform.ui \
     login.ui \
     menu.ui \
-    saleform.ui
+    productlistform.ui \
+    saleform.ui \
+    saleslistform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>productlistform</class>
+ <widget class="QWidget" name="productlistform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1347</width>
+    <height>870</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>130</y>
+     <width>881</width>
+     <height>471</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_delete">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>800</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>حذف</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_edit">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>790</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ویرایش</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_refresh">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>790</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>تازه سازی</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_code">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>650</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_name">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>650</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_buy">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>650</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_sell">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>650</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_stock">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>650</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

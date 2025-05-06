@@ -30,3 +30,12 @@ void Menu::on_pushButton_2_clicked()
     saleform->show();
 }
 
+
+void Menu::on_pushButton_3_clicked()
+{
+    this->close();
+    productlistform *prlistform = new productlistform();
+    prlistform->setAttribute(Qt::WA_DeleteOnClose);
+    prlistform->show();
+}
+
