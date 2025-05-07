@@ -6,6 +6,18 @@ SaleForm::SaleForm(QWidget *parent)
     , ui(new Ui::SaleForm)
 {
     ui->setupUi(this);
+    connect(ui->lineEdit_sellPrice, &QLineEdit::textChanged, this, &SaleForm::updateTotalPrice);
+    connect(ui->lineEdit_quantity, &QLineEdit::textChanged, this, &SaleForm::updateTotalPrice);
+    ui->lineEdit_productName->setVisible(false);
+    ui->lineEdit_sellPrice->setVisible(false);
+    ui->lineEdit_quantity->setVisible(false);
+    ui->lineEdit_total->setVisible(false);
+    ui->label_name->setVisible(false);
+    ui->label_quantity->setVisible(false);
+    ui->label_total->setVisible(false);
+    ui->label_sellprice->setVisible(false);
+    ui->pushButton_submitSale->setVisible(false);
+
 }
 
 SaleForm::~SaleForm()
@@ -29,6 +41,15 @@ void SaleForm::on_pushButton_checkProduct_clicked()
     if (query.exec() && query.next()) {
         ui->lineEdit_productName->setText(query.value(0).toString());
         ui->lineEdit_sellPrice->setText(query.value(1).toString());
+        ui->lineEdit_productName->setVisible(true);
+        ui->lineEdit_sellPrice->setVisible(true);
+        ui->lineEdit_quantity->setVisible(true);
+        ui->lineEdit_total->setVisible(true);
+        ui->label_name->setVisible(true);
+        ui->label_quantity->setVisible(true);
+        ui->label_total->setVisible(true);
+        ui->label_sellprice->setVisible(true);
+        ui->pushButton_submitSale->setVisible(true);
     } else {
         QMessageBox::warning(this, "خطا", "کالایی با این کد پیدا نشد.");
         ui->lineEdit_productName->clear();
@@ -95,11 +116,44 @@ void SaleForm::on_pushButton_submitSale_clicked()
     ui->lineEdit_productName->clear();
     ui->lineEdit_sellPrice->clear();
     ui->lineEdit_quantity->clear();
+    ui->lineEdit_productName->setVisible(false);
+    ui->lineEdit_sellPrice->setVisible(false);
+    ui->lineEdit_quantity->setVisible(false);
+    ui->lineEdit_total->setVisible(false);
+    ui->label_name->setVisible(false);
+    ui->label_quantity->setVisible(false);
+    ui->label_total->setVisible(false);
+    ui->label_sellprice->setVisible(false);
+    ui->pushButton_submitSale->setVisible(false);
 }
 
 
 void SaleForm::on_pushButton_exit_clicked()
 {
-    this->close();
+    if (QMessageBox::question(this, "خروج", "آیا از بستن برنامه مطمئن هستید؟")  == QMessageBox::Yes)
+    {
+        this->close();
+    }}
+
+void SaleForm::updateTotalPrice()
+{
+    bool ok1, ok2;
+    int price = ui->lineEdit_sellPrice->text().toInt(&ok1);
+    int quantity = ui->lineEdit_quantity->text().toInt(&ok2);
+
+    if (ok1 && ok2) {
+        int total = price * quantity;
+        ui->lineEdit_total->setText(QString::number(total));
+    } else {
+        ui->lineEdit_total->clear();
+    }
+}
+
+void SaleForm::on_pushButton_logout_clicked()
+{
+    Login *login = new Login();
+    login->setAttribute(Qt::WA_DeleteOnClose);
+    login->showFullScreen();
+    QTimer::singleShot(1000, this, [this]() {this->close();});
 }
 

@@ -2,6 +2,7 @@
 #define MENU_H
 
 #include <QWidget>
+#include <QTimer>
 #include "addproductform.h"
 #include "saleform.h"
 #include "productlistform.h"
@@ -21,19 +22,20 @@ public:
     ~Menu();
 
 private slots:
-    void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_3_clicked();
-
-    void on_pushButton_4_clicked();
-
-    void on_pushButton_5_clicked();
-
-    void on_logout_clicked();
 
     void on_pushButton_exit_clicked();
+
+    void on_pushButton_logout_clicked();
+
+    void on_pushButton_adduser_clicked();
+
+    void on_pushButton_salelist_clicked();
+
+    void on_pushButton_editpr_clicked();
+
+    void on_pushButton_sellpr_clicked();
+
+    void on_pushButton_login_clicked();
 
 private:
     Ui::Menu *ui;

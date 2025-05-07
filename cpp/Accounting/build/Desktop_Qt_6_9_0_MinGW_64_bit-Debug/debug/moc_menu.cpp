@@ -39,30 +39,30 @@ template <> constexpr inline auto Menu::qt_create_metaobjectdata<qt_meta_tag_ZN4
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "Menu",
-        "on_pushButton_clicked",
+        "on_pushButton_exit_clicked",
         "",
-        "on_pushButton_2_clicked",
-        "on_pushButton_3_clicked",
-        "on_pushButton_4_clicked",
-        "on_pushButton_5_clicked",
-        "on_pushButton_7_clicked",
-        "on_logout_clicked"
+        "on_pushButton_logout_clicked",
+        "on_pushButton_adduser_clicked",
+        "on_pushButton_salelist_clicked",
+        "on_pushButton_editpr_clicked",
+        "on_pushButton_sellpr_clicked",
+        "on_pushButton_login_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'on_pushButton_clicked'
+        // Slot 'on_pushButton_exit_clicked'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_pushButton_2_clicked'
+        // Slot 'on_pushButton_logout_clicked'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_pushButton_3_clicked'
+        // Slot 'on_pushButton_adduser_clicked'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_pushButton_4_clicked'
+        // Slot 'on_pushButton_salelist_clicked'
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_pushButton_5_clicked'
+        // Slot 'on_pushButton_editpr_clicked'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_pushButton_7_clicked'
+        // Slot 'on_pushButton_sellpr_clicked'
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_logout_clicked'
+        // Slot 'on_pushButton_login_clicked'
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
@@ -87,13 +87,13 @@ void Menu::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
     auto *_t = static_cast<Menu *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
-        case 1: _t->on_pushButton_2_clicked(); break;
-        case 2: _t->on_pushButton_3_clicked(); break;
-        case 3: _t->on_pushButton_4_clicked(); break;
-        case 4: _t->on_pushButton_5_clicked(); break;
-        case 5: _t->on_pushButton_7_clicked(); break;
-        case 6: _t->on_logout_clicked(); break;
+        case 0: _t->on_pushButton_exit_clicked(); break;
+        case 1: _t->on_pushButton_logout_clicked(); break;
+        case 2: _t->on_pushButton_adduser_clicked(); break;
+        case 3: _t->on_pushButton_salelist_clicked(); break;
+        case 4: _t->on_pushButton_editpr_clicked(); break;
+        case 5: _t->on_pushButton_sellpr_clicked(); break;
+        case 6: _t->on_pushButton_login_clicked(); break;
         default: ;
         }
     }

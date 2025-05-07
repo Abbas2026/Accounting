@@ -44,17 +44,21 @@ public:
         centralwidget->setObjectName("centralwidget");
         centralwidget->setMinimumSize(QSize(1920, 1080));
         centralwidget->setMaximumSize(QSize(1920, 1080));
-        centralwidget->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 255);"));
+        centralwidget->setStyleSheet(QString::fromUtf8("background-color: #10161f;\n"
+""));
         widget = new QWidget(centralwidget);
         widget->setObjectName("widget");
         widget->setGeometry(QRect(710, 300, 451, 501));
-        widget->setStyleSheet(QString::fromUtf8("border-radius: 10px;\n"
-"background-color: rgb(44, 88, 132);"));
+        widget->setStyleSheet(QString::fromUtf8("background-color:#1d2633;\n"
+"            color: white;\n"
+"            border-radius: 18px;\n"
+"            font-size: 16px;\n"
+"           border: none;  "));
         pushButton_login = new QPushButton(widget);
         pushButton_login->setObjectName("pushButton_login");
         pushButton_login->setGeometry(QRect(140, 410, 171, 51));
         pushButton_login->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_login->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
+        pushButton_login->setStyleSheet(QString::fromUtf8("background-color: #45aef5 ;\n"
 "font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);"));
         lineEdit_password = new QLineEdit(widget);
@@ -71,7 +75,8 @@ public:
         label->setGeometry(QRect(140, 114, 171, 31));
         label->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";\n"
-"background-color: rgb(85, 255, 127);"));
+"background-color: rgb(85, 255, 127);\n"
+"border-radius:10px;"));
         label->setAlignment(Qt::AlignmentFlag::AlignCenter);
         lineEdit_username = new QLineEdit(widget);
         lineEdit_username->setObjectName("lineEdit_username");
@@ -81,20 +86,22 @@ public:
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";"));
-        lineEdit_username->setEchoMode(QLineEdit::EchoMode::Password);
+        lineEdit_username->setEchoMode(QLineEdit::EchoMode::Normal);
         pushButton_Forget = new QPushButton(widget);
         pushButton_Forget->setObjectName("pushButton_Forget");
         pushButton_Forget->setGeometry(QRect(140, 330, 171, 31));
         pushButton_Forget->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_Forget->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";\n"
-"background-color: rgb(255, 170, 255);"));
+"background-color: rgb(255, 170, 255);\n"
+"border-radius:10px;"));
         label_3 = new QLabel(widget);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(140, 224, 171, 31));
         label_3->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "background-color: rgb(85, 255, 127);\n"
-"font: 700 12pt \"Dana\";"));
+"font: 700 12pt \"Dana\";\n"
+"border-radius:10px;"));
         label_3->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_2 = new QLabel(widget);
         label_2->setObjectName("label_2");
@@ -120,7 +127,6 @@ public:
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName("label_4");
         label_4->setGeometry(QRect(0, 0, 1921, 1081));
-        label_4->setPixmap(QPixmap(QString::fromUtf8("ChatGPT Image May 6, 2025, 08_00_47 PM.png")));
         label_4->setScaledContents(true);
         Login->setCentralWidget(centralwidget);
         label_4->raise();

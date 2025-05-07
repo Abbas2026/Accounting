@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
@@ -19,20 +20,15 @@ QT_BEGIN_NAMESPACE
 class Ui_Menu
 {
 public:
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
-    QPushButton *logout;
-    QPushButton *pushButton_7;
-    QPushButton *pushButton_login;
-    QPushButton *pushButton_login_2;
-    QPushButton *pushButton_login_3;
-    QPushButton *pushButton_login_4;
-    QPushButton *pushButton_login_5;
-    QPushButton *pushButton_login_6;
+    QWidget *widget;
     QPushButton *pushButton_exit;
+    QPushButton *pushButton_login;
+    QPushButton *pushButton_logout;
+    QPushButton *pushButton_adduser;
+    QPushButton *pushButton_sellpr;
+    QPushButton *pushButton_salelist;
+    QPushButton *pushButton_editpr;
+    QLabel *label_2;
 
     void setupUi(QWidget *Menu)
     {
@@ -40,90 +36,80 @@ public:
             Menu->setObjectName("Menu");
         Menu->resize(1920, 1080);
         Menu->setMinimumSize(QSize(1920, 1080));
-        Menu->setStyleSheet(QString::fromUtf8(""));
-        pushButton = new QPushButton(Menu);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(670, 150, 80, 24));
-        pushButton_2 = new QPushButton(Menu);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(670, 210, 80, 24));
-        pushButton_3 = new QPushButton(Menu);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(660, 270, 111, 24));
-        pushButton_4 = new QPushButton(Menu);
-        pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(650, 340, 131, 24));
-        pushButton_5 = new QPushButton(Menu);
-        pushButton_5->setObjectName("pushButton_5");
-        pushButton_5->setGeometry(QRect(670, 410, 80, 24));
-        logout = new QPushButton(Menu);
-        logout->setObjectName("logout");
-        logout->setGeometry(QRect(660, 490, 121, 24));
-        pushButton_7 = new QPushButton(Menu);
-        pushButton_7->setObjectName("pushButton_7");
-        pushButton_7->setGeometry(QRect(680, 540, 80, 24));
-        pushButton_login = new QPushButton(Menu);
+        Menu->setStyleSheet(QString::fromUtf8("			background-color: #10161f;"));
+        widget = new QWidget(Menu);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(1610, 0, 311, 1080));
+        widget->setStyleSheet(QString::fromUtf8("background-color:#1d2633;\n"
+""));
+        pushButton_exit = new QPushButton(widget);
+        pushButton_exit->setObjectName("pushButton_exit");
+        pushButton_exit->setGeometry(QRect(70, 750, 171, 51));
+        pushButton_exit->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_exit->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
+"color: rgb(0, 0, 0);\n"
+"border-radius: 10px;\n"
+"background-color: rgb(198, 0, 0);"));
+        pushButton_login = new QPushButton(widget);
         pushButton_login->setObjectName("pushButton_login");
-        pushButton_login->setGeometry(QRect(940, 150, 171, 51));
+        pushButton_login->setGeometry(QRect(70, 150, 171, 51));
         pushButton_login->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_login->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
 "font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 ""));
-        pushButton_login_2 = new QPushButton(Menu);
-        pushButton_login_2->setObjectName("pushButton_login_2");
-        pushButton_login_2->setGeometry(QRect(990, 260, 171, 51));
-        pushButton_login_2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_login_2->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
+        pushButton_logout = new QPushButton(widget);
+        pushButton_logout->setObjectName("pushButton_logout");
+        pushButton_logout->setGeometry(QRect(70, 650, 171, 51));
+        pushButton_logout->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_logout->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
+"background-color: rgb(255, 38, 49);\n"
+"color: rgb(0, 0, 0);\n"
+"border-radius: 10px;\n"
+""));
+        pushButton_adduser = new QPushButton(widget);
+        pushButton_adduser->setObjectName("pushButton_adduser");
+        pushButton_adduser->setGeometry(QRect(70, 550, 171, 51));
+        pushButton_adduser->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_adduser->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
 "font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 ""));
-        pushButton_login_3 = new QPushButton(Menu);
-        pushButton_login_3->setObjectName("pushButton_login_3");
-        pushButton_login_3->setGeometry(QRect(1000, 340, 171, 51));
-        pushButton_login_3->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_login_3->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
+        pushButton_sellpr = new QPushButton(widget);
+        pushButton_sellpr->setObjectName("pushButton_sellpr");
+        pushButton_sellpr->setGeometry(QRect(70, 250, 171, 51));
+        pushButton_sellpr->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_sellpr->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
 "font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 ""));
-        pushButton_login_4 = new QPushButton(Menu);
-        pushButton_login_4->setObjectName("pushButton_login_4");
-        pushButton_login_4->setGeometry(QRect(1020, 410, 171, 51));
-        pushButton_login_4->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_login_4->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
+        pushButton_salelist = new QPushButton(widget);
+        pushButton_salelist->setObjectName("pushButton_salelist");
+        pushButton_salelist->setGeometry(QRect(70, 450, 171, 51));
+        pushButton_salelist->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_salelist->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
 "font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 ""));
-        pushButton_login_5 = new QPushButton(Menu);
-        pushButton_login_5->setObjectName("pushButton_login_5");
-        pushButton_login_5->setGeometry(QRect(1030, 510, 171, 51));
-        pushButton_login_5->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_login_5->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
+        pushButton_editpr = new QPushButton(widget);
+        pushButton_editpr->setObjectName("pushButton_editpr");
+        pushButton_editpr->setGeometry(QRect(70, 350, 171, 51));
+        pushButton_editpr->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_editpr->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
 "font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 ""));
-        pushButton_login_6 = new QPushButton(Menu);
-        pushButton_login_6->setObjectName("pushButton_login_6");
-        pushButton_login_6->setGeometry(QRect(1070, 600, 171, 51));
-        pushButton_login_6->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_login_6->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 0);\n"
-"font: 700 14pt \"Dana\";\n"
-"color: rgb(0, 0, 0);\n"
-"border-radius: 10px;\n"
-""));
-        pushButton_exit = new QPushButton(Menu);
-        pushButton_exit->setObjectName("pushButton_exit");
-        pushButton_exit->setGeometry(QRect(810, 710, 171, 51));
-        pushButton_exit->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_exit->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
-"color: rgb(0, 0, 0);\n"
-"border-radius: 10px;\n"
-"background-color: rgb(198, 0, 0);"));
+        label_2 = new QLabel(widget);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(80, 40, 151, 51));
+        label_2->setStyleSheet(QString::fromUtf8("font: 700 20pt \"Dana\";\n"
+"color: rgb(255, 255, 255);"));
+        label_2->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         retranslateUi(Menu);
 
@@ -133,20 +119,14 @@ public:
     void retranslateUi(QWidget *Menu)
     {
         Menu->setWindowTitle(QCoreApplication::translate("Menu", "Form", nullptr));
-        pushButton->setText(QCoreApplication::translate("Menu", "\330\253\330\250\330\252 \332\251\330\247\331\204\330\247", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Menu", "\331\201\330\261\331\210\330\264 \332\251\330\247\331\204\330\247", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Menu", "\331\210\333\214\330\261\330\247\333\214\330\264 \331\210 \330\255\330\260\331\201 \332\251\330\247\331\204\330\247\331\207\330\247", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Menu", "\331\201\330\247\332\251\330\252\331\210\330\261 \331\201\330\261\331\210\330\264 \331\207\330\247 \331\210 \331\205\330\261\330\254\331\210\330\271", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("Menu", "\330\247\331\201\330\262\331\210\330\257\331\206 \332\251\330\247\330\261\330\250\330\261", nullptr));
-        logout->setText(QCoreApplication::translate("Menu", "\330\256\330\261\331\210\330\254 \330\247\330\262 \330\255\330\263\330\247\330\250 \332\251\330\247\330\261\330\250\330\261\333\214", nullptr));
-        pushButton_7->setText(QCoreApplication::translate("Menu", "\330\256\330\261\331\210\330\254 \330\247\330\262 \330\250\330\261\331\206\330\247\331\205\331\207", nullptr));
-        pushButton_login->setText(QCoreApplication::translate("Menu", "\331\210\330\261\331\210\330\257", nullptr));
-        pushButton_login_2->setText(QCoreApplication::translate("Menu", "\331\210\330\261\331\210\330\257", nullptr));
-        pushButton_login_3->setText(QCoreApplication::translate("Menu", "\331\210\330\261\331\210\330\257", nullptr));
-        pushButton_login_4->setText(QCoreApplication::translate("Menu", "\331\210\330\261\331\210\330\257", nullptr));
-        pushButton_login_5->setText(QCoreApplication::translate("Menu", "\331\210\330\261\331\210\330\257", nullptr));
-        pushButton_login_6->setText(QCoreApplication::translate("Menu", "\331\210\330\261\331\210\330\257", nullptr));
-        pushButton_exit->setText(QCoreApplication::translate("Menu", "\330\256\330\261\331\210\330\254", nullptr));
+        pushButton_exit->setText(QCoreApplication::translate("Menu", "\330\256\330\261\331\210\330\254 \330\247\330\262 \330\250\330\261\331\206\330\247\331\205\331\207", nullptr));
+        pushButton_login->setText(QCoreApplication::translate("Menu", "\330\253\330\250\330\252 \332\251\330\247\331\204\330\247", nullptr));
+        pushButton_logout->setText(QCoreApplication::translate("Menu", "\330\256\330\261\331\210\330\254 \330\247\330\262 \330\255\330\263\330\247\330\250 \332\251\330\247\330\261\330\250\330\261\333\214", nullptr));
+        pushButton_adduser->setText(QCoreApplication::translate("Menu", "\330\247\331\201\330\262\331\210\330\257\331\206 \332\251\330\247\330\261\330\250\330\261", nullptr));
+        pushButton_sellpr->setText(QCoreApplication::translate("Menu", "\331\201\330\261\331\210\330\264 \332\251\330\247\331\204\330\247", nullptr));
+        pushButton_salelist->setText(QCoreApplication::translate("Menu", "\331\201\330\247\332\251\330\252\331\210\330\261\331\207\330\247\333\214 \331\201\330\261\331\210\330\264 ", nullptr));
+        pushButton_editpr->setText(QCoreApplication::translate("Menu", "\331\210\333\214\330\261\330\247\333\214\330\264 \332\251\330\247\331\204\330\247\331\207\330\247", nullptr));
+        label_2->setText(QCoreApplication::translate("Menu", "\331\205\331\206\331\210 \330\250\330\261\331\206\330\247\331\205\331\207", nullptr));
     } // retranslateUi
 
 };

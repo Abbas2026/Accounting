@@ -30,7 +30,8 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 170, 255);</string>
+    <string notr="true">background-color: #10161f;
+</string>
    </property>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
@@ -42,8 +43,11 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 10px;
-background-color: rgb(44, 88, 132);</string>
+     <string notr="true">background-color:#1d2633;
+            color: white;
+            border-radius: 18px;
+            font-size: 16px;
+           border: none;  </string>
     </property>
     <widget class="QPushButton" name="pushButton_login">
      <property name="geometry">
@@ -58,7 +62,7 @@ background-color: rgb(44, 88, 132);</string>
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(85, 255, 0);
+      <string notr="true">background-color: #45aef5 ;
 font: 700 14pt &quot;Dana&quot;;
 color: rgb(0, 0, 0);</string>
      </property>
@@ -98,7 +102,8 @@ font-size: 12pt; </string>
      <property name="styleSheet">
       <string notr="true">color: rgb(0, 0, 0);
 font: 700 12pt &quot;Dana&quot;;
-background-color: rgb(85, 255, 127);</string>
+background-color: rgb(85, 255, 127);
+border-radius:10px;</string>
      </property>
      <property name="text">
       <string>نام کاربری</string>
@@ -124,7 +129,7 @@ color: rgb(0, 0, 0);
 font: 700 12pt &quot;Dana&quot;;</string>
      </property>
      <property name="echoMode">
-      <enum>QLineEdit::EchoMode::Password</enum>
+      <enum>QLineEdit::EchoMode::Normal</enum>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_Forget">
@@ -142,7 +147,8 @@ font: 700 12pt &quot;Dana&quot;;</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(0, 0, 0);
 font: 700 12pt &quot;Dana&quot;;
-background-color: rgb(255, 170, 255);</string>
+background-color: rgb(255, 170, 255);
+border-radius:10px;</string>
      </property>
      <property name="text">
       <string>فراموشی رمز عبور</string>
@@ -160,7 +166,8 @@ background-color: rgb(255, 170, 255);</string>
      <property name="styleSheet">
       <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(85, 255, 127);
-font: 700 12pt &quot;Dana&quot;;</string>
+font: 700 12pt &quot;Dana&quot;;
+border-radius:10px;</string>
      </property>
      <property name="text">
       <string>رمز عبور</string>
@@ -230,9 +237,6 @@ background-color: rgb(198, 0, 0);</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>ChatGPT Image May 6, 2025, 08_00_47 PM.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

@@ -44,9 +44,10 @@ void AddUser::on_pushButton_addUser_clicked()
 
 void AddUser::on_pushButton_menu_clicked()
 {
-    this->close();
     Menu *menu = new Menu();
     menu->setAttribute(Qt::WA_DeleteOnClose);
-    menu->show();
+    menu->showFullScreen();
+    QTimer::singleShot(1000, this, [this]() {this->close();});
+
 }
 

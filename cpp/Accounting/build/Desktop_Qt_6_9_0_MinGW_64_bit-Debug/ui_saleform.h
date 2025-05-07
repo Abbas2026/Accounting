@@ -21,58 +21,148 @@ QT_BEGIN_NAMESPACE
 class Ui_SaleForm
 {
 public:
-    QLineEdit *lineEdit_code;
-    QLineEdit *lineEdit_productName;
-    QLineEdit *lineEdit_sellPrice;
-    QLineEdit *lineEdit_quantity;
-    QLabel *label;
-    QLabel *label_2;
-    QLabel *label_3;
-    QLabel *label_4;
-    QPushButton *pushButton_checkProduct;
-    QPushButton *pushButton_submitSale;
     QPushButton *pushButton_exit;
+    QWidget *widget;
+    QLineEdit *lineEdit_quantity;
+    QLabel *label_sellprice;
+    QLineEdit *lineEdit_sellPrice;
+    QLabel *label_name;
+    QPushButton *pushButton_submitSale;
+    QLineEdit *lineEdit_productName;
+    QLabel *label_code;
+    QLabel *label_quantity;
+    QLineEdit *lineEdit_code;
+    QPushButton *pushButton_checkProduct;
+    QLineEdit *lineEdit_total;
+    QLabel *label_total;
+    QLabel *label_widget;
+    QPushButton *pushButton_logout;
 
     void setupUi(QWidget *SaleForm)
     {
         if (SaleForm->objectName().isEmpty())
             SaleForm->setObjectName("SaleForm");
-        SaleForm->resize(1082, 685);
-        lineEdit_code = new QLineEdit(SaleForm);
-        lineEdit_code->setObjectName("lineEdit_code");
-        lineEdit_code->setGeometry(QRect(730, 40, 113, 24));
-        lineEdit_productName = new QLineEdit(SaleForm);
-        lineEdit_productName->setObjectName("lineEdit_productName");
-        lineEdit_productName->setGeometry(QRect(730, 410, 113, 24));
-        lineEdit_productName->setReadOnly(true);
-        lineEdit_sellPrice = new QLineEdit(SaleForm);
-        lineEdit_sellPrice->setObjectName("lineEdit_sellPrice");
-        lineEdit_sellPrice->setGeometry(QRect(730, 460, 113, 24));
-        lineEdit_sellPrice->setReadOnly(true);
-        lineEdit_quantity = new QLineEdit(SaleForm);
-        lineEdit_quantity->setObjectName("lineEdit_quantity");
-        lineEdit_quantity->setGeometry(QRect(730, 510, 113, 24));
-        label = new QLabel(SaleForm);
-        label->setObjectName("label");
-        label->setGeometry(QRect(850, 40, 49, 16));
-        label_2 = new QLabel(SaleForm);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(880, 420, 49, 16));
-        label_3 = new QLabel(SaleForm);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(850, 460, 81, 20));
-        label_4 = new QLabel(SaleForm);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(880, 510, 49, 16));
-        pushButton_checkProduct = new QPushButton(SaleForm);
-        pushButton_checkProduct->setObjectName("pushButton_checkProduct");
-        pushButton_checkProduct->setGeometry(QRect(750, 80, 80, 24));
-        pushButton_submitSale = new QPushButton(SaleForm);
-        pushButton_submitSale->setObjectName("pushButton_submitSale");
-        pushButton_submitSale->setGeometry(QRect(750, 610, 80, 24));
+        SaleForm->resize(1920, 1080);
+        SaleForm->setMinimumSize(QSize(1920, 1080));
+        SaleForm->setMaximumSize(QSize(1920, 1080));
+        SaleForm->setStyleSheet(QString::fromUtf8("background-color:#040609;"));
         pushButton_exit = new QPushButton(SaleForm);
         pushButton_exit->setObjectName("pushButton_exit");
-        pushButton_exit->setGeometry(QRect(80, 590, 80, 24));
+        pushButton_exit->setGeometry(QRect(70, 940, 171, 51));
+        pushButton_exit->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_exit->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
+"color: rgb(0, 0, 0);\n"
+"border-radius: 10px;\n"
+"background-color: rgb(198, 0, 0);"));
+        widget = new QWidget(SaleForm);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(580, 140, 731, 691));
+        widget->setStyleSheet(QString::fromUtf8("			background-color: #10161f;\n"
+"            color: white;\n"
+"            border-radius: 18px;\n"
+"            font-size: 16px;\n"
+"           border: none;  "));
+        lineEdit_quantity = new QLineEdit(widget);
+        lineEdit_quantity->setObjectName("lineEdit_quantity");
+        lineEdit_quantity->setGeometry(QRect(220, 440, 291, 41));
+        lineEdit_quantity->setStyleSheet(QString::fromUtf8("border:none;\n"
+"border-radius: 10px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 700 12pt \"Dana\";"));
+        lineEdit_quantity->setEchoMode(QLineEdit::EchoMode::Normal);
+        lineEdit_quantity->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        label_sellprice = new QLabel(widget);
+        label_sellprice->setObjectName("label_sellprice");
+        label_sellprice->setGeometry(QRect(520, 370, 151, 31));
+        lineEdit_sellPrice = new QLineEdit(widget);
+        lineEdit_sellPrice->setObjectName("lineEdit_sellPrice");
+        lineEdit_sellPrice->setEnabled(false);
+        lineEdit_sellPrice->setGeometry(QRect(220, 370, 291, 41));
+        lineEdit_sellPrice->setStyleSheet(QString::fromUtf8("border:none;\n"
+"border-radius: 10px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 700 12pt \"Dana\";"));
+        lineEdit_sellPrice->setEchoMode(QLineEdit::EchoMode::Normal);
+        lineEdit_sellPrice->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        label_name = new QLabel(widget);
+        label_name->setObjectName("label_name");
+        label_name->setGeometry(QRect(540, 310, 49, 16));
+        pushButton_submitSale = new QPushButton(widget);
+        pushButton_submitSale->setObjectName("pushButton_submitSale");
+        pushButton_submitSale->setGeometry(QRect(300, 590, 131, 41));
+        pushButton_submitSale->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_submitSale->setStyleSheet(QString::fromUtf8("          background-color: #45aef5 ;\n"
+"            color: white;\n"
+"            border-radius: 10px;\n"
+"            font-size: 16px;\n"
+"           border: none;  "));
+        lineEdit_productName = new QLineEdit(widget);
+        lineEdit_productName->setObjectName("lineEdit_productName");
+        lineEdit_productName->setEnabled(false);
+        lineEdit_productName->setGeometry(QRect(220, 300, 291, 41));
+        lineEdit_productName->setStyleSheet(QString::fromUtf8("border:none;\n"
+"border-radius: 10px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 700 12pt \"Dana\";"));
+        lineEdit_productName->setEchoMode(QLineEdit::EchoMode::Normal);
+        lineEdit_productName->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        label_code = new QLabel(widget);
+        label_code->setObjectName("label_code");
+        label_code->setGeometry(QRect(540, 130, 49, 16));
+        label_quantity = new QLabel(widget);
+        label_quantity->setObjectName("label_quantity");
+        label_quantity->setGeometry(QRect(530, 450, 49, 16));
+        lineEdit_code = new QLineEdit(widget);
+        lineEdit_code->setObjectName("lineEdit_code");
+        lineEdit_code->setGeometry(QRect(220, 120, 291, 41));
+        lineEdit_code->setStyleSheet(QString::fromUtf8("border:none;\n"
+"border-radius: 10px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 700 12pt \"Dana\";"));
+        lineEdit_code->setEchoMode(QLineEdit::EchoMode::Normal);
+        lineEdit_code->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        pushButton_checkProduct = new QPushButton(widget);
+        pushButton_checkProduct->setObjectName("pushButton_checkProduct");
+        pushButton_checkProduct->setGeometry(QRect(300, 190, 131, 41));
+        pushButton_checkProduct->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_checkProduct->setStyleSheet(QString::fromUtf8("          background-color: #45aef5 ;\n"
+"            color: white;\n"
+"            border-radius: 10px;\n"
+"            font-size: 16px;\n"
+"           border: none;  "));
+        lineEdit_total = new QLineEdit(widget);
+        lineEdit_total->setObjectName("lineEdit_total");
+        lineEdit_total->setEnabled(false);
+        lineEdit_total->setGeometry(QRect(220, 510, 291, 41));
+        lineEdit_total->setStyleSheet(QString::fromUtf8("border:none;\n"
+"border-radius: 10px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 700 12pt \"Dana\";"));
+        lineEdit_total->setEchoMode(QLineEdit::EchoMode::Normal);
+        lineEdit_total->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        label_total = new QLabel(widget);
+        label_total->setObjectName("label_total");
+        label_total->setGeometry(QRect(530, 520, 101, 21));
+        label_widget = new QLabel(widget);
+        label_widget->setObjectName("label_widget");
+        label_widget->setGeometry(QRect(290, 30, 151, 51));
+        label_widget->setStyleSheet(QString::fromUtf8("font: 700 20pt \"Dana\";\n"
+"color: rgb(255, 255, 255);"));
+        label_widget->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        pushButton_logout = new QPushButton(SaleForm);
+        pushButton_logout->setObjectName("pushButton_logout");
+        pushButton_logout->setGeometry(QRect(270, 940, 171, 51));
+        pushButton_logout->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_logout->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
+"background-color: rgb(255, 38, 49);\n"
+"color: rgb(0, 0, 0);\n"
+"border-radius: 10px;\n"
+""));
 
         retranslateUi(SaleForm);
 
@@ -82,13 +172,16 @@ public:
     void retranslateUi(QWidget *SaleForm)
     {
         SaleForm->setWindowTitle(QCoreApplication::translate("SaleForm", "Form", nullptr));
-        label->setText(QCoreApplication::translate("SaleForm", "\332\251\330\257 \332\251\330\247\331\204\330\247", nullptr));
-        label_2->setText(QCoreApplication::translate("SaleForm", "\331\206\330\247\331\205 \332\251\330\247\331\204\330\247", nullptr));
-        label_3->setText(QCoreApplication::translate("SaleForm", "\331\202\333\214\331\205\330\252 \331\201\330\261\331\210\330\264", nullptr));
-        label_4->setText(QCoreApplication::translate("SaleForm", "\330\252\330\271\330\257\330\247\330\257", nullptr));
-        pushButton_checkProduct->setText(QCoreApplication::translate("SaleForm", "\330\252\330\247\333\214\333\214\330\257", nullptr));
-        pushButton_submitSale->setText(QCoreApplication::translate("SaleForm", "\331\201\330\261\331\210\330\264", nullptr));
         pushButton_exit->setText(QCoreApplication::translate("SaleForm", "\330\256\330\261\331\210\330\254", nullptr));
+        label_sellprice->setText(QCoreApplication::translate("SaleForm", "\331\202\333\214\331\205\330\252 \331\201\330\261\331\210\330\264(\330\252\331\210\331\205\330\247\331\206)", nullptr));
+        label_name->setText(QCoreApplication::translate("SaleForm", "\331\206\330\247\331\205 \332\251\330\247\331\204\330\247", nullptr));
+        pushButton_submitSale->setText(QCoreApplication::translate("SaleForm", "\331\201\330\261\331\210\330\264", nullptr));
+        label_code->setText(QCoreApplication::translate("SaleForm", "\332\251\330\257 \332\251\330\247\331\204\330\247", nullptr));
+        label_quantity->setText(QCoreApplication::translate("SaleForm", "\330\252\330\271\330\257\330\247\330\257", nullptr));
+        pushButton_checkProduct->setText(QCoreApplication::translate("SaleForm", "\330\252\330\247\333\214\333\214\330\257", nullptr));
+        label_total->setText(QCoreApplication::translate("SaleForm", "\331\205\330\254\331\205\331\210\330\271(\330\252\331\210\331\205\330\247\331\206)", nullptr));
+        label_widget->setText(QCoreApplication::translate("SaleForm", "\330\253\330\250\330\252 \331\201\330\261\331\210\330\264", nullptr));
+        pushButton_logout->setText(QCoreApplication::translate("SaleForm", "\330\256\330\261\331\210\330\254 \330\247\330\262 \330\255\330\263\330\247\330\250 \332\251\330\247\330\261\330\250\330\261\333\214", nullptr));
     } // retranslateUi
 
 };

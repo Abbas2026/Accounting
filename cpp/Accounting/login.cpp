@@ -13,14 +13,10 @@ Login::~Login()
 {
     delete ui;
 }
-void Login::applystyle(){
-
+void Login::applystyle()
+{
     ui->pushButton_login->setStyleSheet(baseStyle);
-
 }
-
-
-
 
 void Login::on_pushButton_login_clicked()
 {
@@ -34,16 +30,16 @@ void Login::on_pushButton_login_clicked()
 
     if (query.exec() && query.next()) {
             if(username=="admin"){
-            this->close();
             Menu *menu = new Menu();
             menu->setAttribute(Qt::WA_DeleteOnClose);
             menu->showFullScreen();
+            QTimer::singleShot(1000, this, [this]() {this->close();});
         }
         else{
-            this->close();
             SaleForm *saleform = new SaleForm();
             saleform->setAttribute(Qt::WA_DeleteOnClose);
             saleform->showFullScreen();
+            QTimer::singleShot(1000, this, [this]() {this->close();});
         }
 
     } else {
@@ -59,4 +55,3 @@ void Login::on_pushButton_exit_clicked()
         this->close();
     }
 }
-
