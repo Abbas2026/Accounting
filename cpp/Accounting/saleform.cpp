@@ -57,7 +57,6 @@ void SaleForm::on_pushButton_checkProduct_clicked()
     }
 }
 
-
 void SaleForm::on_pushButton_submitSale_clicked()
 {
     QString code = ui->lineEdit_code->text().trimmed();
@@ -127,7 +126,6 @@ void SaleForm::on_pushButton_submitSale_clicked()
     ui->pushButton_submitSale->setVisible(false);
 }
 
-
 void SaleForm::on_pushButton_exit_clicked()
 {
     if (QMessageBox::question(this, "خروج", "آیا از بستن برنامه مطمئن هستید؟")  == QMessageBox::Yes)
@@ -156,4 +154,3 @@ void SaleForm::on_pushButton_logout_clicked()
     login->showFullScreen();
     QTimer::singleShot(1000, this, [this]() {this->close();});
 }
-

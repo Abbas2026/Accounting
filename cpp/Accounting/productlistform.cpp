@@ -6,10 +6,14 @@ productlistform::productlistform(QWidget *parent)
     , ui(new Ui::productlistform)
 {
     ui->setupUi(this);
-    connect(ui->tableView, &QTableView::clicked, this, &productlistform::onTableClicked);
+    connect(ui->table_product, &QTableView::clicked, this, &productlistform::onTableClicked);
     connect(ui->pushButton_refresh, &QPushButton::clicked, this, &productlistform::on_pushButton_refresh_clicked);
-
+    ui->table_product->setStyleSheet(table_saleslist);
+    ui->table_product->verticalHeader()->setDefaultSectionSize(50);
     loadProducts();
+    QTimer::singleShot(0, this, [=]() {
+        populateTable();
+    });
 }
 
 productlistform::~productlistform()
@@ -30,9 +34,9 @@ void productlistform::loadProducts()
     model->setHeaderData(4, Qt::Horizontal, "قیمت فروش");
     model->setHeaderData(5, Qt::Horizontal, "موجودی");
 
-    ui->tableView->setModel(model);
-    ui->tableView->resizeColumnsToContents();
-    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+    ui->table_product->setModel(model);
+    ui->table_product->resizeColumnsToContents();
+    ui->table_product->setSelectionBehavior(QAbstractItemView::SelectRows);
 }
 void productlistform::onTableClicked(const QModelIndex &index)
 {
@@ -114,4 +118,23 @@ void productlistform::on_pushButton_menu_clicked()
     QTimer::singleShot(1000, this, [this]() {this->close();});
 
 }
+void productlistform::populateTable(){
+    ui->table_product->horizontalHeader()->setStretchLastSection(false);
+    ui->table_product->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
+    ui->table_product->verticalHeader()->hide();
+    ui->table_product->horizontalHeader()->setSectionsMovable(false);
+    ui->table_product->horizontalHeader()->setSectionsClickable(false);
+    QHeaderView *header = ui->table_product->horizontalHeader();
+    for (int i = 0; i < 7; ++i) {
+        header->setSectionResizeMode(i, QHeaderView::Fixed);
+    }
+    int totalWidth = ui->table_product->viewport()->width();
+
+    for (int i = 0; i < 5; ++i) {
+        ui->table_product->setColumnWidth(i, totalWidth * 0.20);
+        header->setSectionResizeMode(i, QHeaderView::Stretch);
+    }
+
+
+}

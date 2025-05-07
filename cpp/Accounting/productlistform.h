@@ -9,6 +9,7 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include "menu.h"
+#include "styles.h"
 namespace Ui {
 class productlistform;
 }
@@ -20,6 +21,7 @@ class productlistform : public QWidget
 public:
     explicit productlistform(QWidget *parent = nullptr);
     ~productlistform();
+    void populateTable();
 
 private slots:
     void on_tableView_clicked(const QModelIndex &index);

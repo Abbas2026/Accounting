@@ -6,11 +6,20 @@
 #include <QFontDatabase>
 #include "menu.h"
 bool connectToSQLServer() {
-    QSqlDatabase db = QSqlDatabase::addDatabase("QODBC");
-    db.setDatabaseName("Driver={SQL Server};Server=3STAR\\SQLEXPRESS;Database=AccountingDB;Trusted_Connection=yes;");
+
+        QSqlDatabase db;
+    db = QSqlDatabase::addDatabase("QODBC");
+    QString connStr = "Driver={SQL Server};"
+                      "Server=172.27.102.234;"
+                      "Database=AccountingDB;"
+                      "Uid=sales_user;"
+                      "Pwd=test12345;"
+                      "Encrypt=no;";
+
+    db.setDatabaseName(connStr);
 
     if (!db.open()) {
-        QMessageBox::critical(nullptr, "خطا در اتصال به دیتابیس", db.lastError().text());
+        QMessageBox::critical(nullptr, "Connection Error", db.lastError().text());
         return false;
     }
     return true;
@@ -27,7 +36,7 @@ int main(int argc, char *argv[])
     if (!connectToSQLServer()){
         return -1;}
 
-    Menu w;
+    Login w;
     w.showFullScreen();
     return a.exec();
 }

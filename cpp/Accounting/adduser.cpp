@@ -35,6 +35,10 @@ void AddUser::on_pushButton_addUser_clicked()
 
     if (query.exec()) {
         QMessageBox::information(this, "موفق", "کاربر با موفقیت اضافه شد.");
+        ui->lineEdit_name->clear();
+        ui->lineEdit_username->clear();
+        ui->lineEdit_phone->clear();
+        ui->lineEdit_password->clear();
 
     } else {
         QMessageBox::critical(this, "خطا", "ثبت کاربر ناموفق بود:\n" + query.lastError().text());

@@ -5,9 +5,9 @@ DROP TABLE IF EXISTS Users;
 CREATE TABLE Users (
     UserID INT IDENTITY(1,1) PRIMARY KEY,
     FullName NVARCHAR(100),
-    Username NVARCHAR(50) UNIQUE,
+    Username NVARCHAR(50) UNIQUE NOT NULL,
     PhoneNumber NVARCHAR(15),
-    Password NVARCHAR(100)
+    Password NVARCHAR(100) NOT NULL
 );
 
 INSERT INTO Users (FullName, Username, PhoneNumber, Password)

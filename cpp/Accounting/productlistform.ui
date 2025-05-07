@@ -6,31 +6,44 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1347</width>
-    <height>870</height>
+    <width>1920</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QTableView" name="tableView">
+  <property name="styleSheet">
+   <string notr="true">background-color:#040609;</string>
+  </property>
+  <widget class="QTableView" name="table_product">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>130</y>
-     <width>881</width>
-     <height>471</height>
+     <x>360</x>
+     <y>110</y>
+     <width>1111</width>
+     <height>761</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_delete">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>800</y>
+     <x>480</x>
+     <y>960</y>
      <width>80</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Dana&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(132, 0, 0);
+border-radius: 10px;
+</string>
    </property>
    <property name="text">
     <string>حذف</string>
@@ -39,11 +52,18 @@
   <widget class="QPushButton" name="pushButton_edit">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>790</y>
+     <x>660</x>
+     <y>960</y>
      <width>80</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Dana&quot;;
+color: rgb(0, 0, 0);
+border-radius: 10px;
+background-color: rgb(85, 170, 255);
+</string>
    </property>
    <property name="text">
     <string>ویرایش</string>
@@ -52,11 +72,18 @@
   <widget class="QPushButton" name="pushButton_refresh">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>790</y>
+     <x>570</x>
+     <y>960</y>
      <width>80</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 12pt &quot;Dana&quot;;
+color: rgb(0, 0, 0);
+border-radius: 10px;
+background-color: rgb(85, 0, 127);
+</string>
    </property>
    <property name="text">
     <string>تازه سازی</string>
@@ -65,64 +92,234 @@
   <widget class="QLineEdit" name="lineEdit_code">
    <property name="geometry">
     <rect>
-     <x>930</x>
-     <y>650</y>
+     <x>1250</x>
+     <y>960</y>
      <width>113</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_name">
    <property name="geometry">
     <rect>
-     <x>750</x>
-     <y>650</y>
+     <x>1130</x>
+     <y>960</y>
      <width>113</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_buy">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>650</y>
+     <x>890</x>
+     <y>960</y>
      <width>113</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_sell">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>650</y>
+     <x>770</x>
+     <y>960</y>
      <width>113</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_stock">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>650</y>
+     <x>1010</x>
+     <y>960</y>
      <width>113</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>940</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;
+background-color: rgb(85, 255, 127);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>قیمت خرید</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>940</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;
+background-color: rgb(85, 255, 127);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>نام کالا</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>1260</x>
+     <y>940</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;
+background-color: rgb(85, 255, 127);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>کد کالا</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>940</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;
+background-color: rgb(85, 255, 127);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>تعداد</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>940</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 700 12pt &quot;Dana&quot;;
+background-color: rgb(85, 255, 127);
+border-radius:10px;</string>
+   </property>
+   <property name="text">
+    <string>قیمت فروش</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_menu">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>800</y>
-     <width>80</width>
-     <height>24</height>
+     <x>60</x>
+     <y>990</y>
+     <width>171</width>
+     <height>51</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 14pt &quot;Dana&quot;;
+background-color: rgb(255, 38, 49);
+color: rgb(0, 0, 0);
+border-radius: 10px;
+</string>
+   </property>
    <property name="text">
-    <string>منو</string>
+    <string>بازگشت به منو</string>
    </property>
   </widget>
  </widget>

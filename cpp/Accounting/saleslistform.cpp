@@ -2,16 +2,22 @@
 #include "ui_saleslistform.h"
 #include <QSqlQuery>
 #include <QMessageBox>
-
 SalesListForm::SalesListForm(QWidget *parent)
     : QWidget(parent)
-
     , ui(new Ui::SalesListForm)
 {
     ui->setupUi(this);
+
     model = new QSqlTableModel(this);
     connect(ui->tableView_sales, &QTableView::clicked, this, &SalesListForm::onTableClicked);
+    ui->tableView_sales->setStyleSheet(table_saleslist);
+    ui->tableView_sales->verticalHeader()->setDefaultSectionSize(50);
+
     loadSales();
+
+    QTimer::singleShot(0, this, [=]() {
+        populateTable();
+    });
 }
 
 SalesListForm::~SalesListForm()
@@ -69,6 +75,9 @@ void SalesListForm::on_pushButton_deleteSale_clicked()
     QMessageBox::information(this, "موفق", "فروش حذف شد و موجودی کالا بروزرسانی شد.");
     loadSales();
     selectedSaleId = -1;
+    QTimer::singleShot(0, this, [=]() {
+        populateTable();
+    });
 }
 
 void SalesListForm::on_pushButton_menu_clicked()
@@ -77,6 +86,26 @@ void SalesListForm::on_pushButton_menu_clicked()
     menu->setAttribute(Qt::WA_DeleteOnClose);
     menu->showFullScreen();
     QTimer::singleShot(1000, this, [this]() {this->close();});
+
+}
+void SalesListForm::populateTable(){
+    ui->tableView_sales->horizontalHeader()->setStretchLastSection(false);
+    ui->tableView_sales->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+    ui->tableView_sales->verticalHeader()->hide();
+    ui->tableView_sales->horizontalHeader()->setSectionsMovable(false);
+    ui->tableView_sales->horizontalHeader()->setSectionsClickable(false);
+    QHeaderView *header = ui->tableView_sales->horizontalHeader();
+    for (int i = 0; i < 7; ++i) {
+        header->setSectionResizeMode(i, QHeaderView::Fixed);
+    }
+    int totalWidth = ui->tableView_sales->viewport()->width();
+
+    for (int i = 0; i < 6; ++i) {
+        ui->tableView_sales->setColumnWidth(i, totalWidth * 0.13);
+    }
+    ui->tableView_sales->setColumnWidth(6, totalWidth * 0.22);
+
 
 }
 
