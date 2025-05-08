@@ -44,7 +44,7 @@ public:
         AddProductForm->setStyleSheet(QString::fromUtf8("background-color:#040609;"));
         widget = new QWidget(AddProductForm);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(580, 140, 731, 691));
+        widget->setGeometry(QRect(420, 80, 731, 691));
         widget->setStyleSheet(QString::fromUtf8("			background-color: #10161f;\n"
 "            color: white;\n"
 "            border-radius: 18px;\n"
@@ -135,7 +135,7 @@ public:
         label_6->setAlignment(Qt::AlignmentFlag::AlignCenter);
         pushButton_menu = new QPushButton(AddProductForm);
         pushButton_menu->setObjectName("pushButton_menu");
-        pushButton_menu->setGeometry(QRect(60, 970, 171, 51));
+        pushButton_menu->setGeometry(QRect(60, 770, 171, 51));
         pushButton_menu->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_menu->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
 "background-color: rgb(255, 38, 49);\n"

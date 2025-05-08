@@ -35,11 +35,12 @@ public:
         if (Menu->objectName().isEmpty())
             Menu->setObjectName("Menu");
         Menu->resize(1920, 1080);
-        Menu->setMinimumSize(QSize(1920, 1080));
+        Menu->setMinimumSize(QSize(0, 0));
+        Menu->setMaximumSize(QSize(1920, 1080));
         Menu->setStyleSheet(QString::fromUtf8("			background-color: #10161f;"));
         widget = new QWidget(Menu);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(1610, 0, 311, 1080));
+        widget->setGeometry(QRect(1230, 0, 311, 1080));
         widget->setStyleSheet(QString::fromUtf8("background-color:#1d2633;\n"
 ""));
         pushButton_exit = new QPushButton(widget);

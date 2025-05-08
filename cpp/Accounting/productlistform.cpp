@@ -10,6 +10,8 @@ productlistform::productlistform(QWidget *parent)
     connect(ui->pushButton_refresh, &QPushButton::clicked, this, &productlistform::on_pushButton_refresh_clicked);
     ui->table_product->setStyleSheet(table_saleslist);
     ui->table_product->verticalHeader()->setDefaultSectionSize(50);
+    ui->table_product->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
     loadProducts();
     QTimer::singleShot(0, this, [=]() {
         populateTable();
@@ -77,6 +79,9 @@ void productlistform::on_pushButton_delete_clicked()
     if (query.exec()) {
         QMessageBox::information(this, "حذف", "کالا حذف شد.");
         loadProducts();
+        QTimer::singleShot(0, this, [=]() {
+            populateTable();
+        });
     } else {
         QMessageBox::critical(this, "خطا", "حذف انجام نشد:\n" + query.lastError().text());
     }
@@ -98,6 +103,9 @@ void productlistform::on_pushButton_edit_clicked()
     if (query.exec()) {
         QMessageBox::information(this, "ویرایش", "کالا با موفقیت ویرایش شد.");
         loadProducts();
+        QTimer::singleShot(0, this, [=]() {
+            populateTable();
+        });
     } else {
         QMessageBox::critical(this, "خطا", "ویرایش انجام نشد:\n" + query.lastError().text());
     }
@@ -107,6 +115,9 @@ void productlistform::on_pushButton_edit_clicked()
 void productlistform::on_pushButton_refresh_clicked()
 {
         loadProducts();
+    QTimer::singleShot(0, this, [=]() {
+        populateTable();
+    });
 }
 
 

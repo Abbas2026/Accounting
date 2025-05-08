@@ -18,22 +18,22 @@
   </property>
   <widget class="QTableView" name="table_product">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>110</y>
+     <x>300</x>
+     <y>50</y>
      <width>1111</width>
-     <height>761</height>
+     <height>681</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_delete">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>960</y>
+     <x>450</x>
+     <y>800</y>
      <width>80</width>
      <height>24</height>
     </rect>
@@ -52,8 +52,8 @@ border-radius: 10px;
   <widget class="QPushButton" name="pushButton_edit">
    <property name="geometry">
     <rect>
-     <x>660</x>
-     <y>960</y>
+     <x>630</x>
+     <y>800</y>
      <width>80</width>
      <height>24</height>
     </rect>
@@ -72,8 +72,8 @@ background-color: rgb(85, 170, 255);
   <widget class="QPushButton" name="pushButton_refresh">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>960</y>
+     <x>540</x>
+     <y>800</y>
      <width>80</width>
      <height>24</height>
     </rect>
@@ -92,8 +92,8 @@ background-color: rgb(85, 0, 127);
   <widget class="QLineEdit" name="lineEdit_code">
    <property name="geometry">
     <rect>
-     <x>1250</x>
-     <y>960</y>
+     <x>1220</x>
+     <y>800</y>
      <width>113</width>
      <height>24</height>
     </rect>
@@ -112,8 +112,8 @@ font: 700 12pt &quot;Dana&quot;;</string>
   <widget class="QLineEdit" name="lineEdit_name">
    <property name="geometry">
     <rect>
-     <x>1130</x>
-     <y>960</y>
+     <x>1100</x>
+     <y>800</y>
      <width>113</width>
      <height>24</height>
     </rect>
@@ -132,8 +132,8 @@ font: 700 12pt &quot;Dana&quot;;</string>
   <widget class="QLineEdit" name="lineEdit_buy">
    <property name="geometry">
     <rect>
-     <x>890</x>
-     <y>960</y>
+     <x>860</x>
+     <y>800</y>
      <width>113</width>
      <height>24</height>
     </rect>
@@ -152,8 +152,8 @@ font: 700 12pt &quot;Dana&quot;;</string>
   <widget class="QLineEdit" name="lineEdit_sell">
    <property name="geometry">
     <rect>
-     <x>770</x>
-     <y>960</y>
+     <x>740</x>
+     <y>800</y>
      <width>113</width>
      <height>24</height>
     </rect>
@@ -172,8 +172,8 @@ font: 700 12pt &quot;Dana&quot;;</string>
   <widget class="QLineEdit" name="lineEdit_stock">
    <property name="geometry">
     <rect>
-     <x>1010</x>
-     <y>960</y>
+     <x>980</x>
+     <y>800</y>
      <width>113</width>
      <height>24</height>
     </rect>
@@ -192,8 +192,8 @@ font: 700 12pt &quot;Dana&quot;;</string>
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>900</x>
-     <y>940</y>
+     <x>870</x>
+     <y>780</y>
      <width>91</width>
      <height>21</height>
     </rect>
@@ -214,8 +214,8 @@ border-radius:10px;</string>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>1140</x>
-     <y>940</y>
+     <x>1110</x>
+     <y>780</y>
      <width>91</width>
      <height>21</height>
     </rect>
@@ -236,8 +236,8 @@ border-radius:10px;</string>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>1260</x>
-     <y>940</y>
+     <x>1230</x>
+     <y>780</y>
      <width>91</width>
      <height>21</height>
     </rect>
@@ -258,8 +258,8 @@ border-radius:10px;</string>
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>1020</x>
-     <y>940</y>
+     <x>990</x>
+     <y>780</y>
      <width>91</width>
      <height>21</height>
     </rect>
@@ -280,8 +280,8 @@ border-radius:10px;</string>
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>780</x>
-     <y>940</y>
+     <x>750</x>
+     <y>780</y>
      <width>91</width>
      <height>21</height>
     </rect>
@@ -303,7 +303,7 @@ border-radius:10px;</string>
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>990</y>
+     <y>780</y>
      <width>171</width>
      <height>51</height>
     </rect>

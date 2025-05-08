@@ -47,11 +47,11 @@ public:
         productlistform->setStyleSheet(QString::fromUtf8("background-color:#040609;"));
         table_product = new QTableView(productlistform);
         table_product->setObjectName("table_product");
-        table_product->setEnabled(false);
-        table_product->setGeometry(QRect(360, 110, 1111, 761));
+        table_product->setEnabled(true);
+        table_product->setGeometry(QRect(300, 50, 1111, 681));
         pushButton_delete = new QPushButton(productlistform);
         pushButton_delete->setObjectName("pushButton_delete");
-        pushButton_delete->setGeometry(QRect(480, 960, 80, 24));
+        pushButton_delete->setGeometry(QRect(450, 800, 80, 24));
         pushButton_delete->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(132, 0, 0);\n"
@@ -59,7 +59,7 @@ public:
 ""));
         pushButton_edit = new QPushButton(productlistform);
         pushButton_edit->setObjectName("pushButton_edit");
-        pushButton_edit->setGeometry(QRect(660, 960, 80, 24));
+        pushButton_edit->setGeometry(QRect(630, 800, 80, 24));
         pushButton_edit->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
@@ -67,7 +67,7 @@ public:
 ""));
         pushButton_refresh = new QPushButton(productlistform);
         pushButton_refresh->setObjectName("pushButton_refresh");
-        pushButton_refresh->setGeometry(QRect(570, 960, 80, 24));
+        pushButton_refresh->setGeometry(QRect(540, 800, 80, 24));
         pushButton_refresh->setStyleSheet(QString::fromUtf8("font: 700 12pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
@@ -75,7 +75,7 @@ public:
 ""));
         lineEdit_code = new QLineEdit(productlistform);
         lineEdit_code->setObjectName("lineEdit_code");
-        lineEdit_code->setGeometry(QRect(1250, 960, 113, 24));
+        lineEdit_code->setGeometry(QRect(1220, 800, 113, 24));
         lineEdit_code->setStyleSheet(QString::fromUtf8("border:none;\n"
 "border-radius: 10px;\n"
 "background-color: rgb(255, 255, 255);\n"
@@ -84,7 +84,7 @@ public:
         lineEdit_code->setAlignment(Qt::AlignmentFlag::AlignCenter);
         lineEdit_name = new QLineEdit(productlistform);
         lineEdit_name->setObjectName("lineEdit_name");
-        lineEdit_name->setGeometry(QRect(1130, 960, 113, 24));
+        lineEdit_name->setGeometry(QRect(1100, 800, 113, 24));
         lineEdit_name->setStyleSheet(QString::fromUtf8("border:none;\n"
 "border-radius: 10px;\n"
 "background-color: rgb(255, 255, 255);\n"
@@ -93,7 +93,7 @@ public:
         lineEdit_name->setAlignment(Qt::AlignmentFlag::AlignCenter);
         lineEdit_buy = new QLineEdit(productlistform);
         lineEdit_buy->setObjectName("lineEdit_buy");
-        lineEdit_buy->setGeometry(QRect(890, 960, 113, 24));
+        lineEdit_buy->setGeometry(QRect(860, 800, 113, 24));
         lineEdit_buy->setStyleSheet(QString::fromUtf8("border:none;\n"
 "border-radius: 10px;\n"
 "background-color: rgb(255, 255, 255);\n"
@@ -102,7 +102,7 @@ public:
         lineEdit_buy->setAlignment(Qt::AlignmentFlag::AlignCenter);
         lineEdit_sell = new QLineEdit(productlistform);
         lineEdit_sell->setObjectName("lineEdit_sell");
-        lineEdit_sell->setGeometry(QRect(770, 960, 113, 24));
+        lineEdit_sell->setGeometry(QRect(740, 800, 113, 24));
         lineEdit_sell->setStyleSheet(QString::fromUtf8("border:none;\n"
 "border-radius: 10px;\n"
 "background-color: rgb(255, 255, 255);\n"
@@ -111,7 +111,7 @@ public:
         lineEdit_sell->setAlignment(Qt::AlignmentFlag::AlignCenter);
         lineEdit_stock = new QLineEdit(productlistform);
         lineEdit_stock->setObjectName("lineEdit_stock");
-        lineEdit_stock->setGeometry(QRect(1010, 960, 113, 24));
+        lineEdit_stock->setGeometry(QRect(980, 800, 113, 24));
         lineEdit_stock->setStyleSheet(QString::fromUtf8("border:none;\n"
 "border-radius: 10px;\n"
 "background-color: rgb(255, 255, 255);\n"
@@ -120,7 +120,7 @@ public:
         lineEdit_stock->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_9 = new QLabel(productlistform);
         label_9->setObjectName("label_9");
-        label_9->setGeometry(QRect(900, 940, 91, 21));
+        label_9->setGeometry(QRect(870, 780, 91, 21));
         label_9->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";\n"
 "background-color: rgb(85, 255, 127);\n"
@@ -128,7 +128,7 @@ public:
         label_9->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_7 = new QLabel(productlistform);
         label_7->setObjectName("label_7");
-        label_7->setGeometry(QRect(1140, 940, 91, 21));
+        label_7->setGeometry(QRect(1110, 780, 91, 21));
         label_7->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";\n"
 "background-color: rgb(85, 255, 127);\n"
@@ -136,7 +136,7 @@ public:
         label_7->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_6 = new QLabel(productlistform);
         label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(1260, 940, 91, 21));
+        label_6->setGeometry(QRect(1230, 780, 91, 21));
         label_6->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";\n"
 "background-color: rgb(85, 255, 127);\n"
@@ -144,7 +144,7 @@ public:
         label_6->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_8 = new QLabel(productlistform);
         label_8->setObjectName("label_8");
-        label_8->setGeometry(QRect(1020, 940, 91, 21));
+        label_8->setGeometry(QRect(990, 780, 91, 21));
         label_8->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";\n"
 "background-color: rgb(85, 255, 127);\n"
@@ -152,7 +152,7 @@ public:
         label_8->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_10 = new QLabel(productlistform);
         label_10->setObjectName("label_10");
-        label_10->setGeometry(QRect(780, 940, 91, 21));
+        label_10->setGeometry(QRect(750, 780, 91, 21));
         label_10->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "font: 700 12pt \"Dana\";\n"
 "background-color: rgb(85, 255, 127);\n"
@@ -160,7 +160,7 @@ public:
         label_10->setAlignment(Qt::AlignmentFlag::AlignCenter);
         pushButton_menu = new QPushButton(productlistform);
         pushButton_menu->setObjectName("pushButton_menu");
-        pushButton_menu->setGeometry(QRect(60, 990, 171, 51));
+        pushButton_menu->setGeometry(QRect(60, 780, 171, 51));
         pushButton_menu->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_menu->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
 "background-color: rgb(255, 38, 49);\n"

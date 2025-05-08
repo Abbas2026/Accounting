@@ -365,8 +365,16 @@ debug/moc_addproductform.cpp: ../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		../../saleform.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
@@ -377,12 +385,6 @@ debug/moc_addproductform.cpp: ../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
 		../../saleslistform.h \
 		../../adduser.h \
-		../../login.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../../styles.h \
-		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		E:/Qt/6.9.0/mingw_64/bin/moc.exe
 	E:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include E:/Accounting/cpp/Accounting/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IE:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/Accounting/cpp/Accounting -IE:/Qt/6.9.0/mingw_64/include -IE:/Qt/6.9.0/mingw_64/include/QtWidgets -IE:/Qt/6.9.0/mingw_64/include/QtGui -IE:/Qt/6.9.0/mingw_64/include/QtSql -IE:/Qt/6.9.0/mingw_64/include/QtCore -I. -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IE:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\addproductform.h -o debug\moc_addproductform.cpp
@@ -599,8 +601,16 @@ debug/moc_adduser.cpp: ../../adduser.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		../../saleform.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
@@ -611,12 +621,6 @@ debug/moc_adduser.cpp: ../../adduser.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
 		../../saleslistform.h \
 		../../adduser.h \
-		../../login.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../../styles.h \
-		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		E:/Qt/6.9.0/mingw_64/bin/moc.exe
 	E:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include E:/Accounting/cpp/Accounting/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IE:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/Accounting/cpp/Accounting -IE:/Qt/6.9.0/mingw_64/include -IE:/Qt/6.9.0/mingw_64/include/QtWidgets -IE:/Qt/6.9.0/mingw_64/include/QtGui -IE:/Qt/6.9.0/mingw_64/include/QtSql -IE:/Qt/6.9.0/mingw_64/include/QtCore -I. -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IE:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\adduser.h -o debug\moc_adduser.cpp
@@ -823,6 +827,8 @@ debug/moc_login.cpp: ../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlQuery \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquery.h \
@@ -838,6 +844,9 @@ debug/moc_login.cpp: ../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../saleform.h \
+		../../login.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
@@ -848,9 +857,6 @@ debug/moc_login.cpp: ../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
 		../../saleslistform.h \
 		../../adduser.h \
-		../../login.h \
-		../../styles.h \
-		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		E:/Qt/6.9.0/mingw_64/bin/moc.exe
 	E:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include E:/Accounting/cpp/Accounting/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IE:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/Accounting/cpp/Accounting -IE:/Qt/6.9.0/mingw_64/include -IE:/Qt/6.9.0/mingw_64/include/QtWidgets -IE:/Qt/6.9.0/mingw_64/include/QtGui -IE:/Qt/6.9.0/mingw_64/include/QtSql -IE:/Qt/6.9.0/mingw_64/include/QtCore -I. -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IE:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\login.h -o debug\moc_login.cpp
@@ -1053,6 +1059,8 @@ debug/moc_menu.cpp: ../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlQuery \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquery.h \
@@ -1069,6 +1077,12 @@ debug/moc_menu.cpp: ../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../menu.h \
 		../../saleform.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
@@ -1079,12 +1093,6 @@ debug/moc_menu.cpp: ../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
 		../../saleslistform.h \
 		../../adduser.h \
-		../../login.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../../styles.h \
-		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		E:/Qt/6.9.0/mingw_64/bin/moc.exe
 	E:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include E:/Accounting/cpp/Accounting/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IE:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/Accounting/cpp/Accounting -IE:/Qt/6.9.0/mingw_64/include -IE:/Qt/6.9.0/mingw_64/include/QtWidgets -IE:/Qt/6.9.0/mingw_64/include/QtGui -IE:/Qt/6.9.0/mingw_64/include/QtSql -IE:/Qt/6.9.0/mingw_64/include/QtCore -I. -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IE:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\menu.h -o debug\moc_menu.cpp
@@ -1308,17 +1316,19 @@ debug/moc_productlistform.cpp: ../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		../../saleform.h \
-		../../productlistform.h \
-		../../saleslistform.h \
-		../../adduser.h \
 		../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../styles.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../productlistform.h \
+		../../saleslistform.h \
+		../../adduser.h \
 		debug/moc_predefs.h \
 		E:/Qt/6.9.0/mingw_64/bin/moc.exe
 	E:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include E:/Accounting/cpp/Accounting/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IE:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/Accounting/cpp/Accounting -IE:/Qt/6.9.0/mingw_64/include -IE:/Qt/6.9.0/mingw_64/include/QtWidgets -IE:/Qt/6.9.0/mingw_64/include/QtGui -IE:/Qt/6.9.0/mingw_64/include/QtSql -IE:/Qt/6.9.0/mingw_64/include/QtCore -I. -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IE:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\productlistform.h -o debug\moc_productlistform.cpp
@@ -1534,6 +1544,27 @@ debug/moc_saleform.cpp: ../../saleform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
+		../../addproductform.h \
+		../../saleform.h \
+		../../productlistform.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquerymodel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../saleslistform.h \
+		../../adduser.h \
 		debug/moc_predefs.h \
 		E:/Qt/6.9.0/mingw_64/bin/moc.exe
 	E:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include E:/Accounting/cpp/Accounting/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IE:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/Accounting/cpp/Accounting -IE:/Qt/6.9.0/mingw_64/include -IE:/Qt/6.9.0/mingw_64/include/QtWidgets -IE:/Qt/6.9.0/mingw_64/include/QtGui -IE:/Qt/6.9.0/mingw_64/include/QtSql -IE:/Qt/6.9.0/mingw_64/include/QtCore -I. -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IE:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\saleform.h -o debug\moc_saleform.cpp
@@ -1746,6 +1777,8 @@ debug/moc_saleslistform.cpp: ../../saleslistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquerymodel.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlQuery \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquery.h \
@@ -1756,18 +1789,18 @@ debug/moc_saleslistform.cpp: ../../saleslistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../saleform.h \
-		../../productlistform.h \
-		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
-		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
-		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
-		../../saleslistform.h \
-		../../adduser.h \
 		../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../styles.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../productlistform.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
+		../../saleslistform.h \
+		../../adduser.h \
 		debug/moc_predefs.h \
 		E:/Qt/6.9.0/mingw_64/bin/moc.exe
 	E:\Qt\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include E:/Accounting/cpp/Accounting/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IE:/Qt/6.9.0/mingw_64/mkspecs/win32-g++ -IE:/Accounting/cpp/Accounting -IE:/Qt/6.9.0/mingw_64/include -IE:/Qt/6.9.0/mingw_64/include/QtWidgets -IE:/Qt/6.9.0/mingw_64/include/QtGui -IE:/Qt/6.9.0/mingw_64/include/QtSql -IE:/Qt/6.9.0/mingw_64/include/QtCore -I. -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IE:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IE:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\saleslistform.h -o debug\moc_saleslistform.cpp
@@ -2031,7 +2064,15 @@ debug/addproductform.o: ../../addproductform.cpp ../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../saleform.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
@@ -2042,12 +2083,6 @@ debug/addproductform.o: ../../addproductform.cpp ../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
 		../../saleslistform.h \
 		../../adduser.h \
-		../../login.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../../styles.h \
-		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		ui_addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QVariant \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
@@ -2280,8 +2315,16 @@ debug/adduser.o: ../../adduser.cpp ../../adduser.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		../../saleform.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
@@ -2291,12 +2334,6 @@ debug/adduser.o: ../../adduser.cpp ../../adduser.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
 		../../saleslistform.h \
-		../../login.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../../styles.h \
-		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		ui_adduser.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QVariant \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
@@ -2519,6 +2556,8 @@ debug/main.o: ../../main.cpp ../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlQuery \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquery.h \
@@ -2542,10 +2581,10 @@ debug/main.o: ../../main.cpp ../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
-		../../saleslistform.h \
-		../../adduser.h \
 		../../styles.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../saleslistform.h \
+		../../adduser.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/QFontDatabase \
@@ -2754,6 +2793,8 @@ debug/login.o: ../../login.cpp ../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlQuery \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquery.h \
@@ -2777,10 +2818,10 @@ debug/login.o: ../../login.cpp ../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
-		../../saleslistform.h \
-		../../adduser.h \
 		../../styles.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../saleslistform.h \
+		../../adduser.h \
 		ui_login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QVariant \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
@@ -2999,6 +3040,8 @@ debug/menu.o: ../../menu.cpp ../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlQuery \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquery.h \
@@ -3014,6 +3057,12 @@ debug/menu.o: ../../menu.cpp ../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../saleform.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
@@ -3024,16 +3073,15 @@ debug/menu.o: ../../menu.cpp ../../menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
 		../../saleslistform.h \
 		../../adduser.h \
-		../../login.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../../styles.h \
-		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 		ui_menu.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QVariant \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		E:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QPushButton \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h
@@ -3258,16 +3306,18 @@ debug/productlistform.o: ../../productlistform.cpp ../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		../../saleform.h \
-		../../saleslistform.h \
-		../../adduser.h \
 		../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../styles.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../saleslistform.h \
+		../../adduser.h \
 		ui_productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QVariant \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
@@ -3288,10 +3338,13 @@ debug/productlistform.o: ../../productlistform.cpp ../../productlistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
-		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextformat.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qpen.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextoption.h \
@@ -3513,6 +3566,26 @@ debug/saleform.o: ../../saleform.cpp ../../saleform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
+		../../login.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
+		../../addproductform.h \
+		../../productlistform.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlTableModel \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqltablemodel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquerymodel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
+		../../styles.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../saleslistform.h \
+		../../adduser.h \
 		ui_saleform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QVariant \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
@@ -3741,6 +3814,8 @@ debug/saleslistform.o: ../../saleslistform.cpp ../../saleslistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquerymodel.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
 		../../menu.h \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/QTimer \
+		E:/Qt/6.9.0/mingw_64/include/QtCore/qtimer.h \
 		../../addproductform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlQuery \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlquery.h \
@@ -3751,17 +3826,17 @@ debug/saleslistform.o: ../../saleslistform.cpp ../../saleslistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlError \
 		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlerror.h \
 		../../saleform.h \
-		../../productlistform.h \
-		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
-		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
-		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
-		../../adduser.h \
 		../../login.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
 		../../styles.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+		../../productlistform.h \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlDatabase \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/QSqlRecord \
+		E:/Qt/6.9.0/mingw_64/include/QtSql/qsqlrecord.h \
+		../../adduser.h \
 		ui_saleslistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtCore/QVariant \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
@@ -3782,10 +3857,13 @@ debug/saleslistform.o: ../../saleslistform.cpp ../../saleslistform.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		E:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
 		E:/Qt/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
-		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextformat.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qpen.h \
 		E:/Qt/6.9.0/mingw_64/include/QtGui/qtextoption.h \

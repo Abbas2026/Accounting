@@ -19,8 +19,8 @@
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>140</y>
+     <x>420</x>
+     <y>80</y>
      <width>731</width>
      <height>691</height>
     </rect>
@@ -269,7 +269,7 @@ color: rgb(255, 255, 255);</string>
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>970</y>
+     <y>770</y>
      <width>171</width>
      <height>51</height>
     </rect>

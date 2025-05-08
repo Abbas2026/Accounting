@@ -5,6 +5,7 @@
 #include <QApplication>
 #include <QFontDatabase>
 #include "menu.h"
+
 bool connectToSQLServer() {
 
         QSqlDatabase db;
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
     if (!connectToSQLServer()){
         return -1;}
 
-    Login w;
+    Menu w;
     w.showFullScreen();
     return a.exec();
 }

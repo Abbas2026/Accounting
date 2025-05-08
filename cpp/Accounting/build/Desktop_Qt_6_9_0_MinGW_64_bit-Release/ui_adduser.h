@@ -42,7 +42,7 @@ public:
         AddUser->setStyleSheet(QString::fromUtf8("background-color:#040609;"));
         widget = new QWidget(AddUser);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(580, 200, 721, 631));
+        widget->setGeometry(QRect(420, 80, 721, 631));
         widget->setStyleSheet(QString::fromUtf8("			background-color: #10161f;\n"
 "            color: white;\n"
 "            border-radius: 18px;\n"
@@ -118,7 +118,7 @@ public:
         label_widget->setAlignment(Qt::AlignmentFlag::AlignCenter);
         pushButton_menu = new QPushButton(AddUser);
         pushButton_menu->setObjectName("pushButton_menu");
-        pushButton_menu->setGeometry(QRect(80, 940, 171, 51));
+        pushButton_menu->setGeometry(QRect(100, 740, 171, 51));
         pushButton_menu->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_menu->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
 "background-color: rgb(255, 38, 49);\n"

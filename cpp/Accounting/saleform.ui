@@ -31,9 +31,9 @@
   <widget class="QPushButton" name="pushButton_exit">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>940</y>
-     <width>171</width>
+     <x>40</x>
+     <y>750</y>
+     <width>221</width>
      <height>51</height>
     </rect>
    </property>
@@ -53,8 +53,8 @@ background-color: rgb(198, 0, 0);</string>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>140</y>
+     <x>420</x>
+     <y>80</y>
      <width>731</width>
      <height>691</height>
     </rect>
@@ -325,9 +325,9 @@ color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="pushButton_logout">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>940</y>
-     <width>171</width>
+     <x>40</x>
+     <y>670</y>
+     <width>221</width>
      <height>51</height>
     </rect>
    </property>

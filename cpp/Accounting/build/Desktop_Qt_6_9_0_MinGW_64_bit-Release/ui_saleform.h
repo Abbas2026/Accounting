@@ -48,7 +48,7 @@ public:
         SaleForm->setStyleSheet(QString::fromUtf8("background-color:#040609;"));
         pushButton_exit = new QPushButton(SaleForm);
         pushButton_exit->setObjectName("pushButton_exit");
-        pushButton_exit->setGeometry(QRect(70, 940, 171, 51));
+        pushButton_exit->setGeometry(QRect(40, 750, 221, 51));
         pushButton_exit->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_exit->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
@@ -56,7 +56,7 @@ public:
 "background-color: rgb(198, 0, 0);"));
         widget = new QWidget(SaleForm);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(580, 140, 731, 691));
+        widget->setGeometry(QRect(420, 80, 731, 691));
         widget->setStyleSheet(QString::fromUtf8("			background-color: #10161f;\n"
 "            color: white;\n"
 "            border-radius: 18px;\n"
@@ -156,7 +156,7 @@ public:
         label_widget->setAlignment(Qt::AlignmentFlag::AlignCenter);
         pushButton_logout = new QPushButton(SaleForm);
         pushButton_logout->setObjectName("pushButton_logout");
-        pushButton_logout->setGeometry(QRect(270, 940, 171, 51));
+        pushButton_logout->setGeometry(QRect(40, 670, 221, 51));
         pushButton_logout->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_logout->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
 "background-color: rgb(255, 38, 49);\n"

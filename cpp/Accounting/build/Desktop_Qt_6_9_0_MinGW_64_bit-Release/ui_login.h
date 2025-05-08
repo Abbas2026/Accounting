@@ -32,7 +32,6 @@ public:
     QLabel *label_3;
     QLabel *label_2;
     QPushButton *pushButton_exit;
-    QLabel *label_4;
 
     void setupUi(QMainWindow *Login)
     {
@@ -42,13 +41,13 @@ public:
         Login->setStyleSheet(QString::fromUtf8(""));
         centralwidget = new QWidget(Login);
         centralwidget->setObjectName("centralwidget");
-        centralwidget->setMinimumSize(QSize(1920, 1080));
-        centralwidget->setMaximumSize(QSize(1920, 1080));
+        centralwidget->setMinimumSize(QSize(0, 0));
+        centralwidget->setMaximumSize(QSize(16777215, 16777215));
         centralwidget->setStyleSheet(QString::fromUtf8("background-color: #10161f;\n"
 ""));
         widget = new QWidget(centralwidget);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(710, 300, 451, 501));
+        widget->setGeometry(QRect(540, 210, 451, 481));
         widget->setStyleSheet(QString::fromUtf8("background-color:#1d2633;\n"
 "            color: white;\n"
 "            border-radius: 18px;\n"
@@ -118,20 +117,18 @@ public:
         lineEdit_password->raise();
         pushButton_exit = new QPushButton(centralwidget);
         pushButton_exit->setObjectName("pushButton_exit");
-        pushButton_exit->setGeometry(QRect(100, 960, 171, 51));
+        pushButton_exit->setGeometry(QRect(100, 770, 161, 41));
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(pushButton_exit->sizePolicy().hasHeightForWidth());
+        pushButton_exit->setSizePolicy(sizePolicy);
         pushButton_exit->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton_exit->setStyleSheet(QString::fromUtf8("font: 700 14pt \"Dana\";\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 "background-color: rgb(198, 0, 0);"));
-        label_4 = new QLabel(centralwidget);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(0, 0, 1921, 1081));
-        label_4->setScaledContents(true);
         Login->setCentralWidget(centralwidget);
-        label_4->raise();
-        widget->raise();
-        pushButton_exit->raise();
 
         retranslateUi(Login);
 
@@ -147,7 +144,6 @@ public:
         label_3->setText(QCoreApplication::translate("Login", "\330\261\331\205\330\262 \330\271\330\250\331\210\330\261", nullptr));
         label_2->setText(QCoreApplication::translate("Login", "\331\210\330\261\331\210\330\257 \330\250\331\207 \330\255\330\263\330\247\330\250", nullptr));
         pushButton_exit->setText(QCoreApplication::translate("Login", "\330\256\330\261\331\210\330\254", nullptr));
-        label_4->setText(QString());
     } // retranslateUi
 
 };

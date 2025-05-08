@@ -1,6 +1,8 @@
 QT       += core gui
 QT += sql
 RESOURCES += fonts.qrc
+QT += gui widgets
+CONFIG += highdpi
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

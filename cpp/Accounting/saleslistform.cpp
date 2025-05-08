@@ -12,6 +12,7 @@ SalesListForm::SalesListForm(QWidget *parent)
     connect(ui->tableView_sales, &QTableView::clicked, this, &SalesListForm::onTableClicked);
     ui->tableView_sales->setStyleSheet(table_saleslist);
     ui->tableView_sales->verticalHeader()->setDefaultSectionSize(50);
+    ui->tableView_sales->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
     loadSales();
 

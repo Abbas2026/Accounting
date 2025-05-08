@@ -19,14 +19,14 @@
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
     <size>
-     <width>1920</width>
-     <height>1080</height>
+     <width>0</width>
+     <height>0</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>1920</width>
-     <height>1080</height>
+     <width>16777215</width>
+     <height>16777215</height>
     </size>
    </property>
    <property name="styleSheet">
@@ -36,10 +36,10 @@
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>300</y>
+      <x>540</x>
+      <y>210</y>
       <width>451</width>
-      <height>501</height>
+      <height>481</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -208,10 +208,16 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>960</y>
-      <width>171</width>
-      <height>51</height>
+      <y>770</y>
+      <width>161</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -226,25 +232,6 @@ background-color: rgb(198, 0, 0);</string>
      <string>خروج</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1921</width>
-      <height>1081</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <zorder>label_4</zorder>
-   <zorder>widget</zorder>
-   <zorder>pushButton_exit</zorder>
   </widget>
  </widget>
  <resources/>
